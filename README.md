@@ -1,77 +1,328 @@
-﻿# final-backend-djanggo-e-com-klp-2
-## Ahmad Syarif Hidayatullah -2309075020005
-## fidela lathifa - 220907502047
-## Isabella Richard Garaldino-220907501021
-## Naufal Azhar Aziz - 220907501012
-## Alif batara radja - 220907502029
+﻿# Django E-Commerce Store
 
-# Django E-commerce Backend - Kelompok 2
+Aplikasi e-commerce modern yang dibangun dengan Django, dilengkapi dengan sistem pembayaran Midtrans, manajemen produk yang lengkap, dan antarmuka yang responsif.
 
-Proyek ini adalah backend untuk aplikasi e-commerce yang dibangun dengan menggunakan **Django**. Proyek ini bertujuan untuk menyediakan platform e-commerce yang dapat mengelola produk, pengguna, dan transaksi dengan berbagai fitur yang terintegrasi.
+## 📋 Fitur Utama
 
-## Fitur
+### 🛍️ Fitur Toko
+- **Katalog Produk**: Tampilan produk dengan gambar, harga, dan diskon
+- **Kategori Produk**: Sistem kategori hierarkis dengan filtering
+- **Detail Produk**: Halaman detail dengan spesifikasi lengkap dan gambar multiple
+- **Sistem Review**: Rating dan ulasan produk dari pengguna
+- **Pencarian Produk**: Pencarian berdasarkan nama dan kategori
+- **Pagination**: Tampilan produk dengan sistem halaman
 
-- **User Authentication**: Pengguna dapat mendaftar, login, dan mengelola profil mereka.
-- **Product Management**: Admin dapat menambahkan, mengedit, dan menghapus produk.
-- **Shopping Cart**: Pengguna dapat menambahkan produk ke keranjang belanja.
-- **Order Management**: Pengguna dapat melakukan checkout dan admin dapat memantau status pesanan.
-- **Payment Gateway Integration**: Integrasi dengan Midtrans untuk proses pembayaran.
-- **Admin Panel**: Admin dapat mengelola data produk, pengguna, dan pesanan melalui panel admin.
+### 🛒 Keranjang Belanja
+- **Keranjang Real-time**: Update keranjang tanpa refresh halaman
+- **Varian Produk**: Dukungan untuk varian warna, ukuran, dll
+- **Guest Cart**: Keranjang untuk pengguna yang belum login (menggunakan cookies)
+- **Persistent Cart**: Keranjang tersimpan untuk pengguna terdaftar
 
-## Teknologi
+### 💳 Sistem Pembayaran
+- **Integrasi Midtrans**: Payment gateway lengkap dengan berbagai metode
+- **Multiple Payment Methods**: Credit card, e-wallet, bank transfer
+- **Transaction Tracking**: Pelacakan status transaksi real-time
+- **Webhook Handling**: Otomatis update status pembayaran
+- **Order Management**: Sistem manajemen pesanan yang komprehensif
 
-- **Backend**: Django
-- **Database**: SQLite (untuk pengembangan) / PostgreSQL (untuk produksi)
-- **Authentication**: JWT (JSON Web Token)
-- **Payment Gateway**: Midtrans API
+### 👤 Manajemen Pengguna
+- **Autentikasi**: Login, logout, dan registrasi pengguna
+- **Profil Pengguna**: Edit profil, avatar, dan informasi kontak
+- **Riwayat Pesanan**: Tracking pesanan dan status pembayaran
+- **Address Management**: Manajemen alamat pengiriman
 
-## Instalasi
+### 📦 Manajemen Produk (Admin)
+- **Product Variants**: Varian produk dengan harga berbeda
+- **Stock Management**: Manajemen stok dan status ketersediaan
+- **Image Gallery**: Multiple gambar untuk setiap produk
+- **SEO Friendly**: URL slug dan metadata
+- **Digital Products**: Dukungan untuk produk digital
 
-### Persyaratan
+## 🛠️ Teknologi yang Digunakan
 
-Sebelum menjalankan proyek ini, pastikan Anda memiliki perangkat lunak berikut:
+- **Backend**: Django 4.x
+- **Database**: SQLite (default) / PostgreSQL (production)
+- **Payment Gateway**: Midtrans
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Media Storage**: Django static files
+- **Authentication**: Django built-in authentication
 
-- **Python** (versi 3.8 atau lebih tinggi)
-- **Django** (versi 3.x atau lebih tinggi)
-- **Pip** (untuk mengelola dependensi)
-- **Midtrans API Key** (Jika menggunakan payment gateway)
+## 📁 Struktur Proyek
 
-### Langkah-Langkah Instalasi
+```
+store/
+├── models.py          # Model database (Product, Order, Customer, dll)
+├── views.py           # Logic aplikasi dan handling request
+├── urls.py            # URL routing
+├── admin.py           # Konfigurasi Django admin
+├── forms.py           # Form handling
+├── utils.py           # Utility functions (cart handling)
+├── signals.py         # Django signals untuk auto-create profile
+├── templates/
+│   └── store/
+│       ├── store.html
+│       ├── product_detail.html
+│       ├── cart.html
+│       ├── checkout.html
+│       └── ...
+└── static/
+    └── store/
+        ├── css/
+        ├── js/
+        └── images/
+```
 
-1. **Clone Repositori**
+## ⚙️ Instalasi dan Setup
 
-   Clone repositori ini ke mesin lokal Anda dengan perintah berikut:
+### 1. Clone Repository
+```bash
+git clone <repository-url>
+cd django-ecommerce-store
+```
 
-   ```bash
-   git clone https://github.com/ayyi858/backend-ecommerce-djanggo-kelompok02.git
-   cd backend-ecommerce-djanggo-kelompok02
+### 2. Buat Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# atau
+venv\Scripts\activate     # Windows
+```
 
+### 3. Install Dependencies
+```bash
+pip install django
+pip install midtransclient
+pip install Pillow  # untuk image handling
+```
 
-## pre view
-### login
-![Cuplikan layar 2024-11-30 183126](https://github.com/user-attachments/assets/4d7d2ae9-5d96-4641-a797-0aa6ebd92e4a)
+### 4. Konfigurasi Environment Variables
+Buat file `.env` di root project:
+```env
+SECRET_KEY=your_secret_key_here
+DEBUG=True
 
-### register
-![Cuplikan layar 2024-11-30 183140](https://github.com/user-attachments/assets/3c771a2f-5c32-4dfa-b889-c1250eed4114)
+# Midtrans Configuration
+MIDTRANS_CLIENT_KEY=your_midtrans_client_key
+MIDTRANS_SERVER_KEY=your_midtrans_server_key
+MIDTRANS_MERCHANT_ID=your_merchant_id
+MIDTRANS_IS_PRODUCTION=False
+```
 
-### Home page Main Html
-![Cuplikan layar 2024-11-30 183153](https://github.com/user-attachments/assets/f72c8311-027e-4ea0-b303-54a19c4c7d83)
+### 5. Konfigurasi Settings
+Tambahkan di `settings.py`:
+```python
+# Midtrans Settings
+MIDTRANS_CLIENT_KEY = os.getenv('MIDTRANS_CLIENT_KEY')
+MIDTRANS_SERVER_KEY = os.getenv('MIDTRANS_SERVER_KEY')
+MIDTRANS_MERCHANT_ID = os.getenv('MIDTRANS_MERCHANT_ID')
+MIDTRANS_IS_PRODUCTION = os.getenv('MIDTRANS_IS_PRODUCTION', 'False').lower() == 'true'
 
-### Home Page Checkout
-![Cuplikan layar 2024-11-30 183306](https://github.com/user-attachments/assets/c6d5e091-97a5-45b9-9237-a09f1ffaac2b)
+# Media Files
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+```
 
-### admin 
-![Cuplikan layar 2024-11-30 183306](https://github.com/user-attachments/assets/520e36be-584c-4700-88a3-ce4e4b30fd5b)
+### 6. Migrasi Database
+```bash
+python manage.py makemigrations store
+python manage.py migrate
+```
 
-### Home page payment
-![Cuplikan layar 2024-11-30 183313](https://github.com/user-attachments/assets/86e605ee-8f7a-475a-82c0-854dd04e7b3a)
+### 7. Buat Superuser
+```bash
+python manage.py createsuperuser
+```
 
-## Dokumentasi Pengerjaan
-![Gambar WhatsApp 2024-11-20 pukul 19 05 32_40f15207](https://github.com/user-attachments/assets/a2762a44-5698-4d38-8cb3-c3744db0c0d4)
+### 8. Jalankan Server
+```bash
+python manage.py runserver
+```
 
-![Gambar WhatsApp 2024-11-20 pukul 19 05 30_fcfad36c](https://github.com/user-attachments/assets/5bbdeada-9387-4278-a0eb-20eade08c97c)
+## 📊 Model Database
 
+### Product
+- `name`: Nama produk
+- `price`: Harga dalam Rupiah
+- `discount_percent`: Persentase diskon
+- `kategori`: Kategori produk
+- `stock`: Jumlah stok
+- `rating`: Rating produk (1-5)
+- `images`: Multiple gambar produk
 
+### ProductVariant
+- `variant_type`: Jenis varian (color, size, material)
+- `price_adjustment`: Penyesuaian harga untuk varian
+- `stock`: Stok untuk varian tertentu
 
+### Order & OrderItem
+- `customer`: Pelanggan
+- `complete`: Status order selesai
+- `transaction_id`: ID transaksi unik
 
+### Transaction
+- `order`: Relasi ke Order
+- `status`: Status pembayaran
+- `payment_response`: Response dari Midtrans
 
+## 🔧 Konfigurasi Midtrans
+
+1. **Daftar di Midtrans**: [https://midtrans.com](https://midtrans.com)
+2. **Dapatkan kredensial**:
+   - Client Key
+   - Server Key
+   - Merchant ID
+3. **Setup Webhook URL** di dashboard Midtrans:
+   ```
+   https://yourdomain.com/midtrans-notification/
+   ```
+
+## 🌐 URL Endpoints
+
+```python
+# Autentikasi
+/login/                 # Login pengguna
+/logout/                # Logout pengguna
+/register/              # Registrasi pengguna
+
+# Toko
+/                       # Halaman utama toko
+/product/<id>/          # Detail produk
+/categories/            # Daftar kategori
+/category/<slug>/       # Produk dalam kategori
+
+# Keranjang & Checkout
+/cart/                  # Keranjang belanja
+/checkout/              # Halaman checkout
+/update_item/           # Update item keranjang (AJAX)
+
+# Pembayaran
+/create-transaction/    # Buat transaksi pembayaran
+/payment/success/       # Callback sukses
+/payment/error/         # Callback error
+/midtrans-notification/ # Webhook Midtrans
+
+# Profil
+/profil/                # Halaman profil
+/profil/edit/           # Edit profil
+```
+
+## 🎨 Customization
+
+### Menambah Kategori Baru
+```python
+# Di models.py, edit KATEGORI_CHOICES
+KATEGORI_CHOICES = (
+    ('Elektronik', 'Elektronik'),
+    ('Pakaian', 'Pakaian'),
+    ('Makanan', 'Makanan'),
+    ('Minuman', 'Minuman'),
+    ('Kategori_Baru', 'Kategori Baru'),  # Tambah di sini
+    ('Lainnya', 'Lainnya'),
+)
+```
+
+### Custom Field Rupiah
+Proyek ini menggunakan custom field `FieldRupiah` untuk handling mata uang:
+```python
+class FieldRupiah(models.IntegerField):
+    def to_python(self, value):
+        # Auto-convert string dengan format "Rp1.000.000" ke integer
+        if isinstance(value, str):
+            return int(value.replace('Rp', '').replace('.', ''))
+        return value
+```
+
+## 🔍 Testing
+
+### Test Manual
+1. **Registrasi & Login**: Test flow autentikasi
+2. **Add to Cart**: Test penambahan produk ke keranjang
+3. **Checkout Process**: Test proses checkout lengkap
+4. **Payment**: Test dengan Midtrans sandbox
+5. **Admin Panel**: Test CRUD operations
+
+### Test Data
+```bash
+# Buat sample data melalui Django admin atau shell
+python manage.py shell
+
+# Contoh membuat produk
+from store.models import Product
+Product.objects.create(
+    name="Sample Product",
+    price=100000,
+    kategori="Elektronik",
+    stock=10
+)
+```
+
+## 🚀 Deployment
+
+### 1. Production Settings
+```python
+DEBUG = False
+ALLOWED_HOSTS = ['yourdomain.com']
+
+# Database PostgreSQL
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'your_db_name',
+        'USER': 'your_db_user',
+        'PASSWORD': 'your_db_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+```
+
+### 2. Static Files
+```bash
+python manage.py collectstatic
+```
+
+### 3. Set Midtrans ke Production
+```env
+MIDTRANS_IS_PRODUCTION=True
+```
+
+## 🛡️ Security Features
+
+- **CSRF Protection**: Django built-in CSRF protection
+- **SQL Injection Protection**: Django ORM protection
+- **Authentication Required**: Login required untuk checkout
+- **Payment Security**: Midtrans secure payment gateway
+- **Input Validation**: Form validation dan sanitization
+
+## 📝 Todo / Roadmap
+
+- [ ] **Email Notifications**: Email konfirmasi pesanan
+- [ ] **Coupon System**: Sistem kupon diskon
+- [ ] **Wishlist**: Daftar keinginan pengguna
+- [ ] **Advanced Search**: Filter harga, rating, dll
+- [ ] **Social Login**: Login dengan Google/Facebook
+- [ ] **Multi-language**: Dukungan multi bahasa
+- [ ] **API REST**: RESTful API untuk mobile app
+- [ ] **Real-time Chat**: Customer service chat
+
+## 🤝 Contributing
+
+1. Fork repository
+2. Buat branch feature (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push ke branch (`git push origin feature/AmazingFeature`)
+5. Buat Pull Request
+
+## 📞 Support
+
+Jika ada pertanyaan atau issues:
+1. Buat issue di GitHub repository
+2. Email: your-email@example.com
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` file for more information.
+
+---
+
+**Happy Coding! 🚀**

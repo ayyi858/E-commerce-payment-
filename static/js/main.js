@@ -1,900 +1,963 @@
 /**
- * MANIPI - MAIN JAVASCRIPT
- * Professional E-Commerce Functionality
+ * ===========================
+ * MANIPI MAIN JAVASCRIPT
+ * Enhanced main.js with dropdown integration
+ * File: static/js/main.js
+ * ===========================
  */
 
 (function() {
     'use strict';
 
-    // Global variables
-    const MANIPI = window.MANIPI || {};
-    
+    // Global configuration
+    const MANIPI_CONFIG = {
+        // Animation durations
+        animationSpeed: 300,
+        scrollSpeed: 800,
+        
+        // Breakpoints
+        breakpoints: {
+            mobile: 768,
+            tablet: 992,
+            desktop: 1200
+        },
+        
+        // Selectors
+        selectors: {
+            backToTop: '#back-to-top',
+            loadingOverlay: '#loading-overlay',
+            alerts: '.alert',
+            navbar: '#main-navbar',
+            searchForm: '.search-form',
+            cartButtons: '[data-cart-action]',
+            wishlistButtons: '[data-wishlist-action]'
+        }
+    };
+
     /**
-     * Utility Functions
+     * Initialize application
      */
-    const Utils = {
-        // Debounce function for search
-        debounce: function(func, wait, immediate) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    timeout = null;
-                    if (!immediate) func(...args);
-                };
-                const callNow = immediate && !timeout;
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-                if (callNow) func(...args);
-            };
-        },
+    function initApp() {
+        console.log('Manipi: Initializing application...');
+        
+        try {
+            initBackToTop();
+            initSmoothScrolling();
+            initAlertHandling();
+            initNavbarBehavior();
+            initLoadingOverlay();
+            initFormEnhancements();
+            initImageLazyLoading();
+            initCartIntegration();
+            initWishlistIntegration();
+            initSearchEnhancements();
+            initPerformanceMonitoring();
+            
+            console.log('Manipi: Application initialized successfully');
+        } catch (error) {
+            console.error('Manipi: Application initialization failed', error);
+        }
+    }
 
-        // Throttle function for scroll events
-        throttle: function(func, limit) {
-            let inThrottle;
-            return function() {
-                const args = arguments;
-                const context = this;
-                if (!inThrottle) {
-                    func.apply(context, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
-                }
-            };
-        },
+    /**
+     * Initialize back to top button
+     */
+    function initBackToTop() {
+        const backToTopBtn = document.querySelector(MANIPI_CONFIG.selectors.backToTop);
+        if (!backToTopBtn) return;
 
-        // Format currency
-        formatCurrency: function(amount) {
-            return new Intl.NumberFormat('id-ID', {
-                style: 'currency',
-                currency: 'IDR',
-                minimumFractionDigits: 0,
-                maximumFractionDigits: 0
-            }).format(amount);
-        },
+        let ticking = false;
 
-        // Show loading
-        showLoading: function() {
-            const overlay = document.getElementById('loading-overlay');
-            if (overlay) {
-                overlay.classList.add('show');
+        function updateBackToTopVisibility() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
             }
-        },
+            
+            ticking = false;
+        }
 
-        // Hide loading
-        hideLoading: function() {
-            const overlay = document.getElementById('loading-overlay');
-            if (overlay) {
-                overlay.classList.remove('show');
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateBackToTopVisibility);
+                ticking = true;
             }
-        },
+        }
 
-        // Show toast notification
-        showToast: function(message, type = 'info', duration = 3000) {
-            const toast = document.createElement('div');
-            toast.className = `toast-notification toast-${type}`;
-            toast.innerHTML = `
-                <div class="toast-content">
-                    <i class="fas fa-${this.getToastIcon(type)} me-2"></i>
-                    <span>${message}</span>
-                </div>
-                <button type="button" class="toast-close">
-                    <i class="fas fa-times"></i>
-                </button>
-            `;
+        // Scroll event listener
+        window.addEventListener('scroll', requestTick, { passive: true });
 
-            // Add to document
-            document.body.appendChild(toast);
-
-            // Show toast
-            setTimeout(() => toast.classList.add('show'), 100);
-
-            // Auto hide
+        // Click event listener
+        backToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            
+            // Focus management for accessibility
             setTimeout(() => {
-                toast.classList.remove('show');
-                setTimeout(() => toast.remove(), 300);
-            }, duration);
-
-            // Close button
-            toast.querySelector('.toast-close').addEventListener('click', () => {
-                toast.classList.remove('show');
-                setTimeout(() => toast.remove(), 300);
-            });
-        },
-
-        getToastIcon: function(type) {
-            const icons = {
-                success: 'check-circle',
-                error: 'exclamation-circle',
-                warning: 'exclamation-triangle',
-                info: 'info-circle'
-            };
-            return icons[type] || 'info-circle';
-        },
-
-        // CSRF Token
-        getCsrfToken: function() {
-            return MANIPI.csrfToken || document.querySelector('[name=csrfmiddlewaretoken]')?.value;
-        },
-
-        // API Request wrapper
-        apiRequest: async function(url, options = {}) {
-            const defaultOptions = {
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRFToken': this.getCsrfToken()
+                const focusTarget = document.querySelector('h1, .navbar-brand');
+                if (focusTarget) {
+                    focusTarget.focus();
                 }
-            };
+            }, MANIPI_CONFIG.scrollSpeed);
+            
+            trackEvent('scroll_to_top');
+        });
 
-            const mergedOptions = {
-                ...defaultOptions,
-                ...options,
-                headers: {
-                    ...defaultOptions.headers,
-                    ...options.headers
-                }
-            };
-
-            try {
-                const response = await fetch(url, mergedOptions);
-                const data = await response.json();
-                
-                if (!response.ok) {
-                    throw new Error(data.message || 'Request failed');
-                }
-                
-                return data;
-            } catch (error) {
-                console.error('API Request Error:', error);
-                throw error;
-            }
-        }
-    };
+        // Initial check
+        updateBackToTopVisibility();
+    }
 
     /**
-     * Header Component
+     * Initialize smooth scrolling for anchor links
      */
-    const Header = {
-        init: function() {
-            this.handleStickyHeader();
-            this.handleSearch();
-            this.handleMobileMenu();
-            this.handleUserDropdown();
-        },
-
-        handleStickyHeader: function() {
-            const header = document.getElementById('main-header');
-            const navbar = document.getElementById('main-navbar');
-            
-            if (!header || !navbar) return;
-
-            const observer = new IntersectionObserver(
-                ([entry]) => {
-                    if (entry.isIntersecting) {
-                        navbar.classList.remove('scrolled');
-                    } else {
-                        navbar.classList.add('scrolled');
-                    }
-                },
-                { threshold: 0.1 }
-            );
-
-            observer.observe(header);
-        },
-
-        handleSearch: function() {
-            const searchInputs = document.querySelectorAll('.search-input');
-            const searchForms = document.querySelectorAll('.search-form');
-
-            searchInputs.forEach(input => {
-                const clearBtn = input.parentElement.querySelector('.search-clear');
-                
-                // Show/hide clear button
-                input.addEventListener('input', () => {
-                    if (clearBtn) {
-                        clearBtn.style.display = input.value ? 'block' : 'none';
-                    }
-                });
-
-                // Clear search
-                if (clearBtn) {
-                    clearBtn.addEventListener('click', () => {
-                        input.value = '';
-                        clearBtn.style.display = 'none';
-                        input.focus();
-                    });
-                }
-
-                // Search suggestions (if implemented)
-                const debouncedSearch = Utils.debounce((query) => {
-                    if (query.length >= 2) {
-                        this.fetchSearchSuggestions(query);
-                    }
-                }, 300);
-
-                input.addEventListener('input', (e) => {
-                    debouncedSearch(e.target.value);
-                });
-            });
-
-            // Handle form submission
-            searchForms.forEach(form => {
-                form.addEventListener('submit', (e) => {
-                    const input = form.querySelector('.search-input');
-                    if (!input.value.trim()) {
-                        e.preventDefault();
-                        input.focus();
-                    }
-                });
-            });
-        },
-
-        fetchSearchSuggestions: function(query) {
-            // Implement search suggestions if needed
-            // This would typically make an AJAX request to get suggestions
-            console.log('Fetching suggestions for:', query);
-        },
-
-        handleMobileMenu: function() {
-            const toggleBtn = document.querySelector('.navbar-toggler');
-            const navCollapse = document.getElementById('main-nav');
-
-            if (!toggleBtn || !navCollapse) return;
-
-            toggleBtn.addEventListener('click', () => {
-                const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
-                toggleBtn.setAttribute('aria-expanded', !isExpanded);
-            });
-
-            // Close mobile menu when clicking outside
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.navbar') && navCollapse.classList.contains('show')) {
-                    const bsCollapse = new bootstrap.Collapse(navCollapse);
-                    bsCollapse.hide();
-                }
-            });
-        },
-
-        handleUserDropdown: function() {
-            const userDropdowns = document.querySelectorAll('.user-dropdown');
-            
-            userDropdowns.forEach(dropdown => {
-                const toggle = dropdown.querySelector('.dropdown-toggle');
-                const menu = dropdown.querySelector('.dropdown-menu');
-
-                if (!toggle || !menu) return;
-
-                // Custom dropdown behavior if needed
-                toggle.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    menu.classList.toggle('show');
-                });
-
-                // Close dropdown when clicking outside
-                document.addEventListener('click', (e) => {
-                    if (!dropdown.contains(e.target)) {
-                        menu.classList.remove('show');
-                    }
-                });
-            });
-        }
-    };
-
-    /**
-     * Cart Functionality
-     */
-    const Cart = {
-        init: function() {
-            this.handleCartActions();
-            this.updateCartDisplay();
-        },
-
-        handleCartActions: function() {
-            document.addEventListener('click', (e) => {
-                if (e.target.matches('.update-cart') || e.target.closest('.update-cart')) {
-                    e.preventDefault();
-                    const btn = e.target.closest('.update-cart');
-                    const productId = btn.dataset.product;
-                    const action = btn.dataset.action;
-                    const variantId = btn.dataset.variant || null;
-
-                    if (productId && action) {
-                        this.updateCart(productId, action, variantId);
-                    }
-                }
-            });
-        },
-
-        updateCart: async function(productId, action, variantId = null) {
-            if (!MANIPI.isAuthenticated) {
-                this.updateCookieCart(productId, action, variantId);
-                return;
-            }
-
-            try {
-                Utils.showLoading();
-
-                const response = await Utils.apiRequest('/update_item/', {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        productId: productId,
-                        action: action,
-                        variantId: variantId
-                    })
-                });
-
-                this.updateCartDisplay();
-                this.showCartFeedback(action, response);
-
-            } catch (error) {
-                Utils.showToast('Gagal memperbarui keranjang', 'error');
-                console.error('Cart update error:', error);
-            } finally {
-                Utils.hideLoading();
-            }
-        },
-
-        updateCookieCart: function(productId, action, variantId = null) {
-            let cart = this.getCartFromCookie();
-            const key = variantId ? `${productId}_${variantId}` : productId;
-
-            if (!cart[key]) {
-                cart[key] = {
-                    quantity: 0,
-                    variant_id: variantId
-                };
-            }
-
-            if (action === 'add') {
-                cart[key].quantity += 1;
-            } else if (action === 'remove') {
-                cart[key].quantity -= 1;
-                if (cart[key].quantity <= 0) {
-                    delete cart[key];
-                }
-            } else if (action === 'delete') {
-                delete cart[key];
-            }
-
-            this.saveCartToCookie(cart);
-            this.updateCartDisplay();
-            this.showCartFeedback(action);
-        },
-
-        getCartFromCookie: function() {
-            const cartCookie = document.cookie
-                .split('; ')
-                .find(row => row.startsWith('cart='));
-            
-            if (cartCookie) {
-                try {
-                    return JSON.parse(decodeURIComponent(cartCookie.split('=')[1]));
-                } catch (e) {
-                    return {};
-                }
-            }
-            return {};
-        },
-
-        saveCartToCookie: function(cart) {
-            document.cookie = `cart=${encodeURIComponent(JSON.stringify(cart))};path=/;max-age=${30 * 24 * 60 * 60}`;
-        },
-
-        updateCartDisplay: function() {
-            const cartBadges = document.querySelectorAll('.action-badge');
-            const cart = this.getCartFromCookie();
-            let totalItems = 0;
-
-            Object.values(cart).forEach(item => {
-                totalItems += item.quantity || 0;
-            });
-
-            cartBadges.forEach(badge => {
-                if (badge.closest('.cart-btn')) {
-                    badge.textContent = totalItems;
-                    badge.style.display = totalItems > 0 ? 'flex' : 'none';
-                }
-            });
-
-            // Update MANIPI.cartItems for other scripts
-            MANIPI.cartItems = totalItems;
-        },
-
-        showCartFeedback: function(action, response = null) {
-            const messages = {
-                add: 'Produk ditambahkan ke keranjang',
-                remove: 'Produk dikurangi dari keranjang',
-                delete: 'Produk dihapus dari keranjang'
-            };
-
-            const message = messages[action] || 'Keranjang diperbarui';
-            Utils.showToast(message, 'success', 2000);
-
-            // Add visual feedback to button
-            const buttons = document.querySelectorAll(`[data-action="${action}"]`);
-            buttons.forEach(btn => {
-                btn.classList.add('btn-success');
-                setTimeout(() => {
-                    btn.classList.remove('btn-success');
-                }, 1000);
-            });
-        }
-    };
-
-    /**
-     * Product Components
-     */
-    const Product = {
-        init: function() {
-            this.handleQuickView();
-            this.handleWishlist();
-            this.handleCompare();
-            this.handleProductImages();
-        },
-
-        handleQuickView: function() {
-            document.addEventListener('click', (e) => {
-                if (e.target.matches('.quick-view-btn') || e.target.closest('.quick-view-btn')) {
-                    e.preventDefault();
-                    const btn = e.target.closest('.quick-view-btn');
-                    const productId = btn.dataset.productId;
-                    
-                    if (productId) {
-                        this.openQuickView(productId);
-                    }
-                }
-            });
-        },
-
-        openQuickView: async function(productId) {
-            try {
-                Utils.showLoading();
-
-                // Fetch product data
-                const response = await Utils.apiRequest(`/api/product/${productId}/`);
-                this.populateQuickViewModal(response);
-
-                // Show modal
-                const modal = new bootstrap.Modal(document.getElementById('quickViewModal'));
-                modal.show();
-
-            } catch (error) {
-                Utils.showToast('Gagal memuat detail produk', 'error');
-                console.error('Quick view error:', error);
-            } finally {
-                Utils.hideLoading();
-            }
-        },
-
-        populateQuickViewModal: function(product) {
-            const modal = document.getElementById('quickViewModal');
-            if (!modal) return;
-
-            // Update modal content
-            modal.querySelector('#quickViewImage').src = product.imageURL;
-            modal.querySelector('#quickViewCategory').textContent = product.kategori;
-            modal.querySelector('#quickViewTitle').textContent = product.name;
-            modal.querySelector('#quickViewPrice').textContent = product.format_discount_price;
-            modal.querySelector('#quickViewDescription').textContent = product.description || '';
-            modal.querySelector('#quickViewStock').textContent = product.stock > 0 ? 'Tersedia' : 'Habis';
-            modal.querySelector('#quickViewSku').textContent = product.sku || 'N/A';
-
-            // Update rating
-            const ratingElement = modal.querySelector('#quickViewRating');
-            if (ratingElement) {
-                const percentage = (product.rating / 5) * 100;
-                ratingElement.style.width = `${percentage}%`;
-            }
-
-            // Update review count
-            modal.querySelector('#quickViewReviewCount').textContent = `(${product.review_count || 0})`;
-
-            // Update original price if there's a discount
-            const originalPriceElement = modal.querySelector('#quickViewOriginalPrice');
-            if (product.discount_percent > 0) {
-                originalPriceElement.textContent = product.format_harga;
-                originalPriceElement.style.display = 'inline';
-            } else {
-                originalPriceElement.style.display = 'none';
-            }
-
-            // Update discount badge
-            const discountBadge = modal.querySelector('#quickViewDiscountBadge');
-            if (product.discount_percent > 0) {
-                discountBadge.querySelector('span').textContent = `${product.discount_percent}% OFF`;
-                discountBadge.style.display = 'block';
-            } else {
-                discountBadge.style.display = 'none';
-            }
-
-            // Update add to cart button
-            const addToCartBtn = modal.querySelector('#quickViewAddToCart');
-            addToCartBtn.dataset.product = product.id;
-            addToCartBtn.dataset.action = 'add';
-
-            // Update detail link
-            modal.querySelector('#quickViewDetailLink').href = `/product/${product.id}/`;
-        },
-
-        handleWishlist: function() {
-            document.addEventListener('click', (e) => {
-                if (e.target.matches('.wishlist-btn') || e.target.closest('.wishlist-btn')) {
-                    e.preventDefault();
-                    const btn = e.target.closest('.wishlist-btn');
-                    const productId = btn.dataset.product;
-                    
-                    if (productId) {
-                        this.toggleWishlist(productId, btn);
-                    }
-                }
-            });
-        },
-
-        toggleWishlist: async function(productId, button) {
-            if (!MANIPI.isAuthenticated) {
-                Utils.showToast('Silakan login terlebih dahulu', 'warning');
-                return;
-            }
-
-            try {
-                const response = await Utils.apiRequest('/api/wishlist/toggle/', {
-                    method: 'POST',
-                    body: JSON.stringify({ product_id: productId })
-                });
-
-                // Update button state
-                const icon = button.querySelector('i');
-                if (response.added) {
-                    icon.classList.remove('far');
-                    icon.classList.add('fas');
-                    button.classList.add('active');
-                    Utils.showToast('Ditambahkan ke wishlist', 'success');
-                } else {
-                    icon.classList.remove('fas');
-                    icon.classList.add('far');
-                    button.classList.remove('active');
-                    Utils.showToast('Dihapus dari wishlist', 'info');
-                }
-
-                // Update wishlist counter
-                this.updateWishlistCounter();
-
-            } catch (error) {
-                Utils.showToast('Gagal memperbarui wishlist', 'error');
-                console.error('Wishlist error:', error);
-            }
-        },
-
-        updateWishlistCounter: function() {
-            // Update wishlist badge if exists
-            const wishlistBadge = document.querySelector('.wishlist-btn .action-badge');
-            if (wishlistBadge) {
-                // This would typically be updated from the server response
-                // For now, we'll just indicate there are items
-                wishlistBadge.style.display = 'flex';
-            }
-        },
-
-        handleCompare: function() {
-            document.addEventListener('click', (e) => {
-                if (e.target.matches('.compare-btn') || e.target.closest('.compare-btn')) {
-                    e.preventDefault();
-                    const btn = e.target.closest('.compare-btn');
-                    const productId = btn.dataset.product;
-                    
-                    if (productId) {
-                        this.toggleCompare(productId, btn);
-                    }
-                }
-            });
-        },
-
-        toggleCompare: function(productId, button) {
-            let compareList = JSON.parse(localStorage.getItem('compareList') || '[]');
-            const index = compareList.indexOf(productId);
-
-            if (index === -1) {
-                if (compareList.length >= 4) {
-                    Utils.showToast('Maksimal 4 produk untuk perbandingan', 'warning');
-                    return;
-                }
-                compareList.push(productId);
-                button.classList.add('active');
-                Utils.showToast('Ditambahkan ke perbandingan', 'success');
-            } else {
-                compareList.splice(index, 1);
-                button.classList.remove('active');
-                Utils.showToast('Dihapus dari perbandingan', 'info');
-            }
-
-            localStorage.setItem('compareList', JSON.stringify(compareList));
-            this.updateCompareCounter();
-        },
-
-        updateCompareCounter: function() {
-            const compareList = JSON.parse(localStorage.getItem('compareList') || '[]');
-            // Update compare counter in UI if exists
-            console.log('Compare list updated:', compareList.length, 'items');
-        },
-
-        handleProductImages: function() {
-            // Image zoom and gallery functionality
-            const productImages = document.querySelectorAll('.product-img');
-            
-            productImages.forEach(img => {
-                img.addEventListener('mouseenter', function() {
-                    if (this.nextElementSibling && this.nextElementSibling.classList.contains('product-img-hover')) {
-                        this.style.opacity = '0';
-                        this.nextElementSibling.style.opacity = '1';
-                    }
-                });
-
-                img.addEventListener('mouseleave', function() {
-                    if (this.nextElementSibling && this.nextElementSibling.classList.contains('product-img-hover')) {
-                        this.style.opacity = '1';
-                        this.nextElementSibling.style.opacity = '0';
-                    }
-                });
-            });
-        }
-    };
-
-    /**
-     * Form Enhancements
-     */
-    const Forms = {
-        init: function() {
-            this.handleNewsletterForm();
-            this.enhanceFormValidation();
-        },
-
-        handleNewsletterForm: function() {
-            const forms = document.querySelectorAll('.newsletter-form');
-            
-            forms.forEach(form => {
-                form.addEventListener('submit', async (e) => {
-                    e.preventDefault();
-                    
-                    const emailInput = form.querySelector('input[type="email"]');
-                    const email = emailInput.value.trim();
-                    
-                    if (!email) {
-                        Utils.showToast('Silakan masukkan email Anda', 'warning');
-                        return;
-                    }
-
-                    try {
-                        await Utils.apiRequest('/api/newsletter/subscribe/', {
-                            method: 'POST',
-                            body: JSON.stringify({ email: email })
-                        });
-
-                        Utils.showToast('Berhasil berlangganan newsletter!', 'success');
-                        emailInput.value = '';
-                        
-                    } catch (error) {
-                        Utils.showToast('Gagal berlangganan newsletter', 'error');
-                        console.error('Newsletter subscription error:', error);
-                    }
-                });
-            });
-        },
-
-        enhanceFormValidation: function() {
-            const forms = document.querySelectorAll('form[novalidate]');
-            
-            forms.forEach(form => {
-                form.addEventListener('submit', (e) => {
-                    if (!form.checkValidity()) {
-                        e.preventDefault();
-                        e.stopPropagation();
-                        
-                        // Focus first invalid field
-                        const firstInvalid = form.querySelector(':invalid');
-                        if (firstInvalid) {
-                            firstInvalid.focus();
-                        }
-                    }
-                    
-                    form.classList.add('was-validated');
-                });
-            });
-        }
-    };
-
-    /**
-     * UI Enhancements
-     */
-    const UI = {
-        init: function() {
-            this.handleBackToTop();
-            this.handleSmoothScroll();
-            this.initializeTooltips();
-            this.handleViewSwitcher();
-        },
-
-        handleBackToTop: function() {
-            const backToTopBtn = document.getElementById('back-to-top');
-            if (!backToTopBtn) return;
-
-            const toggleBackToTop = Utils.throttle(() => {
-                if (window.scrollY > 300) {
-                    backToTopBtn.classList.add('show');
-                } else {
-                    backToTopBtn.classList.remove('show');
-                }
-            }, 100);
-
-            window.addEventListener('scroll', toggleBackToTop);
-
-            backToTopBtn.addEventListener('click', () => {
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            });
-        },
-
-        handleSmoothScroll: function() {
-            document.addEventListener('click', (e) => {
-                const anchor = e.target.closest('a[href^="#"]');
-                if (!anchor) return;
-
-                const targetId = anchor.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
+    function initSmoothScrolling() {
+        const anchorLinks = document.querySelectorAll('a[href^="#"]:not([href="#"])');
+        
+        anchorLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
                 
                 if (targetElement) {
                     e.preventDefault();
-                    targetElement.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    
+                    const headerHeight = document.querySelector(MANIPI_CONFIG.selectors.navbar)?.offsetHeight || 0;
+                    const targetPosition = targetElement.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
                     });
+                    
+                    // Update focus
+                    setTimeout(() => {
+                        targetElement.focus();
+                        targetElement.scrollIntoView({ block: 'nearest' });
+                    }, MANIPI_CONFIG.scrollSpeed);
                 }
             });
-        },
-
-        initializeTooltips: function() {
-            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-            tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl);
-            });
-        },
-
-        handleViewSwitcher: function() {
-            const viewSwitchers = document.querySelectorAll('.view-switcher button');
-            const productsContainer = document.querySelector('.products-container');
-            
-            viewSwitchers.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const view = btn.dataset.view;
-                    
-                    // Update active button
-                    viewSwitchers.forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    
-                    // Update products container
-                    if (productsContainer) {
-                        if (view === 'list') {
-                            productsContainer.classList.add('list-view');
-                        } else {
-                            productsContainer.classList.remove('list-view');
-                        }
-                    }
-                    
-                    // Save preference
-                    localStorage.setItem('preferredView', view);
-                });
-            });
-
-            // Load saved preference
-            const savedView = localStorage.getItem('preferredView');
-            if (savedView) {
-                const btn = document.querySelector(`[data-view="${savedView}"]`);
-                if (btn) {
-                    btn.click();
-                }
-            }
-        }
-    };
+        });
+    }
 
     /**
-     * Performance Optimizations
+     * Initialize alert handling
      */
-    const Performance = {
-        init: function() {
-            this.lazyLoadImages();
-            this.preloadCriticalResources();
-        },
+    function initAlertHandling() {
+        const alerts = document.querySelectorAll(MANIPI_CONFIG.selectors.alerts);
+        
+        alerts.forEach(alert => {
+            // Auto-dismiss alerts after 5 seconds (except error alerts)
+            if (!alert.classList.contains('alert-danger') && !alert.classList.contains('alert-error')) {
+                setTimeout(() => {
+                    dismissAlert(alert);
+                }, 5000);
+            }
+            
+            // Add dismiss animation
+            const closeBtn = alert.querySelector('.btn-close');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => dismissAlert(alert));
+            }
+        });
+    }
 
-        lazyLoadImages: function() {
-            if ('IntersectionObserver' in window) {
-                const imageObserver = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const img = entry.target;
-                            img.src = img.dataset.src;
-                            img.classList.remove('lazy');
+    /**
+     * Dismiss alert with animation
+     */
+    function dismissAlert(alert) {
+        alert.style.opacity = '0';
+        alert.style.transform = 'translateX(100%)';
+        
+        setTimeout(() => {
+            alert.remove();
+        }, MANIPI_CONFIG.animationSpeed);
+    }
+
+    /**
+     * Initialize navbar behavior
+     */
+    function initNavbarBehavior() {
+        const navbar = document.querySelector(MANIPI_CONFIG.selectors.navbar);
+        if (!navbar) return;
+
+        let lastScrollTop = 0;
+        let ticking = false;
+
+        function updateNavbar() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Add shadow when scrolled
+            if (scrollTop > 10) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+            
+            // Hide/show navbar on scroll (optional)
+            if (Math.abs(scrollTop - lastScrollTop) > 50) {
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    navbar.classList.add('navbar-hidden');
+                } else {
+                    navbar.classList.remove('navbar-hidden');
+                }
+                lastScrollTop = scrollTop;
+            }
+            
+            ticking = false;
+        }
+
+        function requestNavbarTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateNavbar);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestNavbarTick, { passive: true });
+        
+        // Initial check
+        updateNavbar();
+    }
+
+    /**
+     * Initialize loading overlay
+     */
+    function initLoadingOverlay() {
+        const loadingOverlay = document.querySelector(MANIPI_CONFIG.selectors.loadingOverlay);
+        if (!loadingOverlay) return;
+
+        // Hide loading overlay after page load
+        window.addEventListener('load', () => {
+            hideLoading();
+        });
+
+        // Show loading for form submissions
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+            form.addEventListener('submit', (e) => {
+                // Don't show loading for GET forms (search forms)
+                if (form.method.toLowerCase() !== 'get') {
+                    showLoading();
+                }
+            });
+        });
+
+        // Show loading for navigation
+        const navLinks = document.querySelectorAll('a[href]:not([href^="#"]):not([target="_blank"]):not([data-no-loading])');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                showLoading();
+            });
+        });
+    }
+
+    /**
+     * Show loading overlay
+     */
+    function showLoading() {
+        const loadingOverlay = document.querySelector(MANIPI_CONFIG.selectors.loadingOverlay);
+        if (loadingOverlay) {
+            loadingOverlay.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    /**
+     * Hide loading overlay
+     */
+    function hideLoading() {
+        const loadingOverlay = document.querySelector(MANIPI_CONFIG.selectors.loadingOverlay);
+        if (loadingOverlay) {
+            loadingOverlay.classList.remove('show');
+            document.body.style.overflow = '';
+        }
+    }
+
+    /**
+     * Initialize form enhancements
+     */
+    function initFormEnhancements() {
+        const forms = document.querySelectorAll('form');
+        
+        forms.forEach(form => {
+            // Add loading state to submit buttons
+            const submitBtn = form.querySelector('[type="submit"]');
+            if (submitBtn) {
+                form.addEventListener('submit', function() {
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Processing...';
+                });
+            }
+            
+            // Enhance input fields
+            const inputs = form.querySelectorAll('input, textarea, select');
+            inputs.forEach(enhanceInput);
+        });
+        
+        // Enhance standalone inputs
+        const standaloneInputs = document.querySelectorAll('input:not(form input), textarea:not(form textarea), select:not(form select)');
+        standaloneInputs.forEach(enhanceInput);
+    }
+
+    /**
+     * Enhance individual input field
+     */
+    function enhanceInput(input) {
+        // Add focus effects
+        input.addEventListener('focus', function() {
+            this.closest('.form-group, .input-group, .search-input-group')?.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+            this.closest('.form-group, .input-group, .search-input-group')?.classList.remove('focused');
+        });
+        
+        // Add validation feedback
+        input.addEventListener('invalid', function(e) {
+            e.preventDefault();
+            showInputError(this, this.validationMessage);
+        });
+        
+        input.addEventListener('input', function() {
+            clearInputError(this);
+        });
+    }
+
+    /**
+     * Show input error
+     */
+    function showInputError(input, message) {
+        clearInputError(input);
+        
+        input.classList.add('is-invalid');
+        
+        const feedback = document.createElement('div');
+        feedback.className = 'invalid-feedback d-block';
+        feedback.textContent = message;
+        
+        input.parentNode.appendChild(feedback);
+    }
+
+    /**
+     * Clear input error
+     */
+    function clearInputError(input) {
+        input.classList.remove('is-invalid');
+        
+        const feedback = input.parentNode.querySelector('.invalid-feedback');
+        if (feedback) {
+            feedback.remove();
+        }
+    }
+
+    /**
+     * Initialize image lazy loading
+     */
+    function initImageLazyLoading() {
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        const src = img.dataset.src || img.dataset.lazySrc;
+                        
+                        if (src) {
+                            img.src = src;
+                            img.classList.add('loaded');
                             observer.unobserve(img);
                         }
-                    });
+                    }
                 });
+            });
 
-                document.querySelectorAll('img[data-src]').forEach(img => {
-                    imageObserver.observe(img);
-                });
-            }
-        },
-
-        preloadCriticalResources: function() {
-            // Preload critical resources
-            const criticalResources = [
-                '/static/css/main.css',
-                '/static/js/main.js'
-            ];
-
-            criticalResources.forEach(resource => {
-                const link = document.createElement('link');
-                link.rel = 'preload';
-                link.as = resource.endsWith('.css') ? 'style' : 'script';
-                link.href = resource;
-                document.head.appendChild(link);
+            const lazyImages = document.querySelectorAll('img[data-src], img[data-lazy-src]');
+            lazyImages.forEach(img => {
+                img.classList.add('lazy');
+                imageObserver.observe(img);
             });
         }
-    };
+    }
 
     /**
-     * Application Initialization
+     * Initialize cart integration
      */
-    const App = {
-        init: function() {
-            // Initialize all components
-            Header.init();
-            Cart.init();
-            Product.init();
-            Forms.init();
-            UI.init();
-            Performance.init();
+    function initCartIntegration() {
+        // Cart update buttons
+        const cartButtons = document.querySelectorAll(MANIPI_CONFIG.selectors.cartButtons);
+        cartButtons.forEach(button => {
+            button.addEventListener('click', handleCartAction);
+        });
+        
+        // Listen for cart updates from other components
+        window.addEventListener('manipi:cart-updated', function(e) {
+            updateCartUI(e.detail);
+        });
+    }
 
-            // Hide loading overlay
-            setTimeout(() => {
-                Utils.hideLoading();
-            }, 500);
-
-            // Initialize Bootstrap components
-            this.initBootstrapComponents();
-
-            console.log('Manipi App initialized successfully');
-        },
-
-        initBootstrapComponents: function() {
-            // Initialize tooltips
-            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-            tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl);
-            });
-
-            // Initialize popovers
-            const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-            popoverTriggerList.map(function (popoverTriggerEl) {
-                return new bootstrap.Popover(popoverTriggerEl);
-            });
+    /**
+     * Handle cart actions
+     */
+    function handleCartAction(e) {
+        e.preventDefault();
+        
+        const button = e.currentTarget;
+        const action = button.dataset.cartAction;
+        const productId = button.dataset.productId;
+        const variantId = button.dataset.variantId || null;
+        
+        if (!productId || !action) {
+            console.error('Missing product ID or action for cart operation');
+            return;
         }
-    };
+        
+        // Show loading state
+        const originalContent = button.innerHTML;
+        button.disabled = true;
+        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+        
+        // Prepare request data
+        const requestData = {
+            productId: productId,
+            action: action
+        };
+        
+        if (variantId) {
+            requestData.variantId = variantId;
+        }
+        
+        // Make AJAX request
+        fetch('/update_item/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCsrfToken()
+            },
+            body: JSON.stringify(requestData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                throw new Error(data.error);
+            }
+            
+            // Update UI
+            updateCartUI(data);
+            
+            // Show success feedback
+            showToast('success', 'Cart updated successfully');
+            
+            // Dispatch custom event
+            window.dispatchEvent(new CustomEvent('manipi:cart-updated', {
+                detail: data
+            }));
+        })
+        .catch(error => {
+            console.error('Cart update failed:', error);
+            showToast('error', 'Failed to update cart. Please try again.');
+        })
+        .finally(() => {
+            // Restore button state
+            button.disabled = false;
+            button.innerHTML = originalContent;
+        });
+    }
 
-    // DOM Content Loaded
-    document.addEventListener('DOMContentLoaded', function() {
-        App.init();
+    /**
+     * Update cart UI elements
+     */
+    function updateCartUI(data) {
+        // Update cart badge in dropdown
+        if (window.ManipiDropdown) {
+            window.ManipiDropdown.updateCartBadge(data.cartItems || 0);
+        }
+        
+        // Update cart total displays
+        const cartTotalElements = document.querySelectorAll('[data-cart-total]');
+        cartTotalElements.forEach(element => {
+            if (data.cartTotal !== undefined) {
+                element.textContent = formatPrice(data.cartTotal);
+            }
+        });
+        
+        // Update item quantities
+        const quantityElements = document.querySelectorAll(`[data-item-quantity="${data.productId}"]`);
+        quantityElements.forEach(element => {
+            if (data.quantity !== undefined) {
+                element.textContent = data.quantity;
+            }
+        });
+    }
+
+    /**
+     * Initialize wishlist integration
+     */
+    function initWishlistIntegration() {
+        const wishlistButtons = document.querySelectorAll(MANIPI_CONFIG.selectors.wishlistButtons);
+        wishlistButtons.forEach(button => {
+            button.addEventListener('click', handleWishlistAction);
+        });
+    }
+
+    /**
+     * Handle wishlist actions
+     */
+    function handleWishlistAction(e) {
+        e.preventDefault();
+        
+        const button = e.currentTarget;
+        const productId = button.dataset.productId;
+        const action = button.dataset.wishlistAction || 'toggle';
+        
+        if (!productId) {
+            console.error('Missing product ID for wishlist operation');
+            return;
+        }
+        
+        // Show loading state
+        const icon = button.querySelector('i');
+        const originalClass = icon.className;
+        icon.className = 'fas fa-spinner fa-spin';
+        
+        // Simulate wishlist API call (replace with actual endpoint)
+        setTimeout(() => {
+            // Toggle wishlist state
+            const isInWishlist = button.classList.contains('in-wishlist');
+            
+            if (isInWishlist) {
+                button.classList.remove('in-wishlist');
+                icon.className = 'far fa-heart';
+                showToast('info', 'Removed from wishlist');
+            } else {
+                button.classList.add('in-wishlist');
+                icon.className = 'fas fa-heart';
+                showToast('success', 'Added to wishlist');
+            }
+            
+            // Update wishlist badge
+            const currentCount = parseInt(document.querySelector('.wishlist-btn .action-badge')?.textContent || '0');
+            const newCount = isInWishlist ? currentCount - 1 : currentCount + 1;
+            
+            if (window.ManipiDropdown) {
+                window.ManipiDropdown.updateWishlistBadge(Math.max(0, newCount));
+            }
+            
+            // Dispatch custom event
+            window.dispatchEvent(new CustomEvent('manipi:wishlist-updated', {
+                detail: { count: Math.max(0, newCount), productId, action }
+            }));
+            
+        }, 500);
+    }
+
+    /**
+     * Initialize search enhancements
+     */
+    function initSearchEnhancements() {
+        const searchForms = document.querySelectorAll(MANIPI_CONFIG.selectors.searchForm);
+        
+        searchForms.forEach(form => {
+            const input = form.querySelector('input[name="search"]');
+            const clearBtn = form.querySelector('.search-clear');
+            
+            if (!input) return;
+            
+            // Add search suggestions (placeholder for future implementation)
+            let searchTimeout;
+            input.addEventListener('input', function() {
+                clearTimeout(searchTimeout);
+                searchTimeout = setTimeout(() => {
+                    handleSearchInput(this.value.trim());
+                }, 300);
+            });
+            
+            // Clear button functionality
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function() {
+                    input.value = '';
+                    input.focus();
+                    clearBtn.style.display = 'none';
+                });
+            }
+            
+            // Show/hide clear button
+            input.addEventListener('input', function() {
+                if (clearBtn) {
+                    clearBtn.style.display = this.value.length > 0 ? 'block' : 'none';
+                }
+            });
+            
+            // Form submission tracking
+            form.addEventListener('submit', function() {
+                trackEvent('search', input.value.trim());
+            });
+        });
+    }
+
+    /**
+     * Handle search input for suggestions
+     */
+    function handleSearchInput(query) {
+        if (query.length < 2) return;
+        
+        // Placeholder for search suggestions API
+        console.log('Search suggestions for:', query);
+        
+        // Could implement autocomplete/suggestions here
+        // fetchSearchSuggestions(query);
+    }
+
+    /**
+     * Initialize performance monitoring
+     */
+    function initPerformanceMonitoring() {
+        // Monitor page load performance
+        window.addEventListener('load', () => {
+            if ('performance' in window) {
+                setTimeout(() => {
+                    const perfData = performance.getEntriesByType('navigation')[0];
+                    const loadTime = perfData.loadEventEnd - perfData.loadEventStart;
+                    
+                    console.log(`Page load time: ${loadTime}ms`);
+                    
+                    // Track performance metrics
+                    trackEvent('performance', 'page_load_time', Math.round(loadTime));
+                }, 0);
+            }
+        });
+        
+        // Monitor long tasks
+        if ('PerformanceObserver' in window) {
+            try {
+                const observer = new PerformanceObserver((list) => {
+                    for (const entry of list.getEntries()) {
+                        if (entry.duration > 50) {
+                            console.warn(`Long task detected: ${entry.duration}ms`);
+                        }
+                    }
+                });
+                
+                observer.observe({ entryTypes: ['longtask'] });
+            } catch (e) {
+                // PerformanceObserver not supported or failed
+                console.debug('Performance monitoring not available');
+            }
+        }
+    }
+
+    /**
+     * Show toast notification
+     */
+    function showToast(type = 'info', message = '', duration = 3000) {
+        // Remove existing toasts
+        const existingToasts = document.querySelectorAll('.manipi-toast');
+        existingToasts.forEach(toast => toast.remove());
+        
+        // Create toast element
+        const toast = document.createElement('div');
+        toast.className = `manipi-toast toast-${type}`;
+        
+        const iconMap = {
+            success: 'fas fa-check-circle',
+            error: 'fas fa-exclamation-circle',
+            warning: 'fas fa-exclamation-triangle',
+            info: 'fas fa-info-circle'
+        };
+        
+        toast.innerHTML = `
+            <div class="toast-content">
+                <i class="${iconMap[type] || iconMap.info}"></i>
+                <span>${message}</span>
+                <button type="button" class="toast-close" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        `;
+        
+        // Add styles
+        Object.assign(toast.style, {
+            position: 'fixed',
+            top: '20px',
+            right: '20px',
+            background: getToastBackground(type),
+            color: 'white',
+            padding: '12px 16px',
+            borderRadius: '8px',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+            zIndex: '9999',
+            transform: 'translateX(400px)',
+            transition: 'transform 0.3s ease-out',
+            maxWidth: '400px',
+            fontSize: '14px'
+        });
+        
+        const content = toast.querySelector('.toast-content');
+        Object.assign(content.style, {
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px'
+        });
+        
+        const closeBtn = toast.querySelector('.toast-close');
+        Object.assign(closeBtn.style, {
+            background: 'none',
+            border: 'none',
+            color: 'inherit',
+            marginLeft: 'auto',
+            cursor: 'pointer',
+            padding: '0',
+            fontSize: '12px'
+        });
+        
+        // Add to DOM
+        document.body.appendChild(toast);
+        
+        // Animate in
+        requestAnimationFrame(() => {
+            toast.style.transform = 'translateX(0)';
+        });
+        
+        // Close functionality
+        const closeToast = () => {
+            toast.style.transform = 'translateX(400px)';
+            setTimeout(() => toast.remove(), 300);
+        };
+        
+        closeBtn.addEventListener('click', closeToast);
+        
+        // Auto close
+        if (duration > 0) {
+            setTimeout(closeToast, duration);
+        }
+        
+        return toast;
+    }
+
+    /**
+     * Get toast background color
+     */
+    function getToastBackground(type) {
+        const colors = {
+            success: '#10b981',
+            error: '#ef4444',
+            warning: '#f59e0b',
+            info: '#3b82f6'
+        };
+        return colors[type] || colors.info;
+    }
+
+    /**
+     * Format price for display
+     */
+    function formatPrice(price) {
+        if (typeof price === 'string') {
+            price = parseFloat(price.replace(/[^\d.-]/g, ''));
+        }
+        
+        return new Intl.NumberFormat('id-ID', {
+            style: 'currency',
+            currency: 'IDR',
+            minimumFractionDigits: 0
+        }).format(price);
+    }
+
+    /**
+     * Get CSRF token from cookies or meta tag
+     */
+    function getCsrfToken() {
+        // First try to get from global MANIPI object
+        if (window.MANIPI && window.MANIPI.csrfToken) {
+            return window.MANIPI.csrfToken;
+        }
+        
+        // Then try meta tag
+        const metaToken = document.querySelector('meta[name="csrf-token"]');
+        if (metaToken) {
+            return metaToken.getAttribute('content');
+        }
+        
+        // Finally try cookie
+        const cookieMatch = document.cookie.match(/csrftoken=([^;]+)/);
+        return cookieMatch ? cookieMatch[1] : '';
+    }
+
+    /**
+     * Track events for analytics
+     */
+    function trackEvent(category, action, label = null, value = null) {
+        try {
+            // Google Analytics 4
+            if (typeof gtag !== 'undefined') {
+                gtag('event', action, {
+                    event_category: category,
+                    event_label: label,
+                    value: value
+                });
+            }
+            
+            // Google Analytics Universal
+            if (typeof ga !== 'undefined') {
+                ga('send', 'event', category, action, label, value);
+            }
+            
+            // Custom analytics
+            if (window.MANIPI && window.MANIPI.analytics) {
+                window.MANIPI.analytics.track(action, {
+                    category,
+                    label,
+                    value
+                });
+            }
+            
+            console.debug(`Event tracked: ${category} - ${action}`, { label, value });
+        } catch (error) {
+            console.debug('Analytics tracking failed:', error);
+        }
+    }
+
+    /**
+     * Utility: Throttle function
+     */
+    function throttle(func, limit) {
+        let inThrottle;
+        return function() {
+            const args = arguments;
+            const context = this;
+            if (!inThrottle) {
+                func.apply(context, args);
+                inThrottle = true;
+                setTimeout(() => inThrottle = false, limit);
+            }
+        };
+    }
+
+    /**
+     * Utility: Debounce function
+     */
+    function debounce(func, wait, immediate = false) {
+        let timeout;
+        return function executedFunction() {
+            const context = this;
+            const args = arguments;
+            
+            const later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            
+            const callNow = immediate && !timeout;
+            
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            
+            if (callNow) func.apply(context, args);
+        };
+    }
+
+    /**
+     * Utility: Check if element is in viewport
+     */
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    /**
+     * Utility: Get device info
+     */
+    function getDeviceInfo() {
+        const width = window.innerWidth;
+        return {
+            isMobile: width < MANIPI_CONFIG.breakpoints.mobile,
+            isTablet: width >= MANIPI_CONFIG.breakpoints.mobile && width < MANIPI_CONFIG.breakpoints.desktop,
+            isDesktop: width >= MANIPI_CONFIG.breakpoints.desktop,
+            width: width,
+            height: window.innerHeight
+        };
+    }
+
+    /**
+     * Public API
+     */
+    window.Manipi = window.Manipi || {};
+    Object.assign(window.Manipi, {
+        // Core functions
+        init: initApp,
+        showLoading: showLoading,
+        hideLoading: hideLoading,
+        showToast: showToast,
+        
+        // Utilities
+        formatPrice: formatPrice,
+        getCsrfToken: getCsrfToken,
+        trackEvent: trackEvent,
+        throttle: throttle,
+        debounce: debounce,
+        isInViewport: isInViewport,
+        getDeviceInfo: getDeviceInfo,
+        
+        // State
+        config: MANIPI_CONFIG
     });
 
-    // Export to global scope
-    window.ManipiApp = {
-        Utils,
-        Header,
-        Cart,
-        Product,
-        Forms,
-        UI,
-        Performance,
-        App
-    };
+    // Auto-initialize on DOM ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initApp);
+    } else {
+        initApp();
+    }
+
+    // Handle page visibility change
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            console.log('Page hidden');
+        } else {
+            console.log('Page visible');
+            // Refresh dynamic content if needed
+        }
+    });
+
+    // Handle online/offline status
+    window.addEventListener('online', function() {
+        showToast('success', 'Connection restored', 2000);
+        console.log('Back online');
+    });
+
+    window.addEventListener('offline', function() {
+        showToast('warning', 'You are offline', 5000);
+        console.log('Gone offline');
+    });
+
+    // Global error handler
+    window.addEventListener('error', function(e) {
+        console.error('Global error:', e.error);
+        
+        // Don't show toast for script errors in production
+        if (window.location.hostname !== 'localhost') {
+            trackEvent('error', 'javascript_error', e.message);
+        } else {
+            showToast('error', 'An error occurred. Check console for details.');
+        }
+    });
+
+    // Unhandled promise rejection handler
+    window.addEventListener('unhandledrejection', function(e) {
+        console.error('Unhandled promise rejection:', e.reason);
+        
+        if (window.location.hostname !== 'localhost') {
+            trackEvent('error', 'promise_rejection', e.reason?.toString());
+        }
+    });
 
 })();

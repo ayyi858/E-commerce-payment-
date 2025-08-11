@@ -1762,3 +1762,81 @@ INFO 2025-08-11 21:19:08,855 basehttp 16528 10284 "GET /cart/ HTTP/1.1" 200 3128
 INFO 2025-08-11 21:19:11,668 basehttp 16528 10284 "GET / HTTP/1.1" 200 103262
 INFO 2025-08-11 21:19:21,548 basehttp 16528 10284 "GET / HTTP/1.1" 200 102418
 INFO 2025-08-11 21:19:21,586 basehttp 16528 10284 "GET /static/js/main.js HTTP/1.1" 304 0
+INFO 2025-08-11 21:30:44,057 autoreload 18900 15368 Watching for file changes with StatReloader
+INFO 2025-08-11 21:30:49,684 basehttp 18900 9488 "GET / HTTP/1.1" 200 102418
+INFO 2025-08-11 21:30:49,729 basehttp 18900 9488 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2025-08-11 21:30:49,729 basehttp 18900 10684 "GET /static/css/store.css HTTP/1.1" 304 0
+INFO 2025-08-11 21:30:51,460 basehttp 18900 10684 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 21:30:51,463 basehttp 18900 9488 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 21:30:53,812 basehttp 18900 9488 "GET /cart/ HTTP/1.1" 200 37140
+INFO 2025-08-11 21:30:56,013 basehttp 18900 9488 "GET /checkout/ HTTP/1.1" 200 29216
+ERROR 2025-08-11 21:30:59,778 log 18900 9488 Internal Server Error: /create-transaction/
+ERROR 2025-08-11 21:30:59,779 basehttp 18900 9488 "POST /create-transaction/ HTTP/1.1" 500 358
+ERROR 2025-08-11 21:31:27,978 log 18900 9488 Internal Server Error: /checkout/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: store/main.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 169, in checkout
+    return render(request, 'store/checkout.html', context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: store/main.html
+ERROR 2025-08-11 21:31:27,992 basehttp 18900 9488 "GET /checkout/ HTTP/1.1" 500 156325
