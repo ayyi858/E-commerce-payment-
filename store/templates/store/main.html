@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Manipi | Premium E-Commerce Platform{% endblock %}</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="{% block description %}Manipi - Platform e-commerce premium dengan koleksi produk berkualitas tinggi dan pengalaman berbelanja yang luar biasa.{% endblock %}">
+    <meta name="keywords" content="{% block keywords %}e-commerce, online store, premium products, manipi, shopping{% endblock %}">
+    <meta name="author" content="Manipi Store">
+    <meta name="theme-color" content="#1f2937">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{% block og_title %}Manipi | Premium E-Commerce Platform{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Platform e-commerce premium dengan koleksi produk berkualitas tinggi{% endblock %}">
+    <meta property="og:image" content="{% static 'images/og-image.jpg' %}">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{% static 'images/favicon.svg' %}">
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    {% block extra_css %}{% endblock %}
+
+    <!-- JavaScript Variables -->
+    <script>
+        window.MANIPI = {
+            user: '{{ request.user|escapejs }}',
+            isAuthenticated: {% if request.user.is_authenticated %}true{% else %}false{% endif %},
+            cartItems: {{ cartItems|default:0 }},
+            csrfToken: '{{ csrf_token }}',
+            baseUrl: '{{ request.get_host }}',
+            staticUrl: '{% get_static_prefix %}',
+            mediaUrl: '{{ MEDIA_URL }}'
+        };
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner-ring"></div>
+            <span class="loading-text">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="main-header">
+        <!-- Top Bar -->
+        <div class="top-bar d-none d-lg-block">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="top-bar-left">
+                            <span class="top-bar-item">
+                                <i class="fas fa-shipping-fast me-1"></i>
+                                Gratis ongkir untuk pembelian di atas Rp500.000
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="top-bar-right">
+                            <div class="top-bar-links">
+                                <a href="#" class="top-bar-link">
+                                    <i class="fas fa-headset me-1"></i>
+                                    Customer Service
+                                </a>
+                                <a href="#" class="top-bar-link">
+                                    <i class="fas fa-map-marker-alt me-1"></i>
+                                    Store Locator
+                                </a>
+                                {% if not user.is_authenticated %}
+                                <a href="{% url 'login' %}" class="top-bar-link">
+                                    <i class="fas fa-sign-in-alt me-1"></i>
+                                    Masuk
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="navbar navbar-expand-xl navbar-light" id="main-navbar">
+            <div class="container">
+                <!-- Brand -->
+                <a class="navbar-brand" href="{% url 'store' %}">
+                    <div class="brand-logo">
+                        <svg class="brand-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z" fill="currentColor"/>
+                            <path d="M9 8V17H11V8H9ZM13 8V17H15V8H13Z" fill="currentColor"/>
+                        </svg>
+                        <span class="brand-text">Manipi</span>
+                    </div>
+                </a>
+
+                <!-- Mobile Search Toggle -->
+                <button class="btn btn-link d-xl-none me-2" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-search">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Search Bar (Desktop) -->
+                <div class="search-container d-none d-xl-flex">
+                    <form action="{% url 'store' %}" method="get" class="search-form">
+                        <div class="search-input-group">
+                            <div class="search-input-wrapper">
+                                <i class="fas fa-search search-icon"></i>
+                                <input type="text" 
+                                       name="search" 
+                                       class="search-input" 
+                                       placeholder="Cari produk, brand, atau kategori..." 
+                                       value="{{ request.GET.search|default:'' }}"
+                                       autocomplete="off">
+                                <button type="button" class="search-clear" style="display: none;">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                            <button type="submit" class="search-btn">
+                                <span>Cari</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Main Navigation -->
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <!-- Navigation Links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.resolver_match.url_name == 'store' %}active{% endif %}" 
+                               href="{% url 'store' %}">
+                                Beranda
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Kategori
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{% url 'store' %}?category=Elektronik">Elektronik</a></li>
+                                <li><a class="dropdown-item" href="{% url 'store' %}?category=Pakaian">Pakaian</a></li>
+                                <li><a class="dropdown-item" href="{% url 'store' %}?category=Makanan">Makanan</a></li>
+                                <li><a class="dropdown-item" href="{% url 'store' %}?category=Minuman">Minuman</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{% url 'category_list' %}">Lihat Semua Kategori</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Promo
+                                <span class="nav-badge">Hot</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Kontak</a>
+                        </li>
+                    </ul>
+
+                    <!-- User Actions -->
+                    <div class="navbar-actions">
+                        {% if user.is_authenticated %}
+                        <!-- User Dropdown -->
+                        <div class="dropdown user-dropdown">
+                            <button class="action-btn dropdown-toggle" data-bs-toggle="dropdown">
+                                <div class="user-avatar">
+                                    {% if user.profile.avatar %}
+                                    <img src="{{ user.profile.avatarURL }}" alt="{{ user.username }}">
+                                    {% else %}
+                                    <i class="fas fa-user"></i>
+                                    {% endif %}
+                                </div>
+                                <span class="d-none d-lg-inline user-name">{{ user.first_name|default:user.username }}</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li class="dropdown-header">
+                                    <div class="user-info">
+                                        <div class="user-name">{{ user.get_full_name|default:user.username }}</div>
+                                        <div class="user-email">{{ user.email }}</div>
+                                    </div>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{% url 'profil' %}">
+                                    <i class="fas fa-user me-2"></i>Profil Saya
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <i class="fas fa-shopping-bag me-2"></i>Pesanan Saya
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <i class="fas fa-heart me-2"></i>Wishlist
+                                </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                    <i class="fas fa-cog me-2"></i>Pengaturan
+                                </a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="{% url 'logout' %}">
+                                    <i class="fas fa-sign-out-alt me-2"></i>Keluar
+                                </a></li>
+                            </ul>
+                        </div>
+                        {% else %}
+                        <!-- Login Button -->
+                        <a href="{% url 'login' %}" class="action-btn login-btn">
+                            <i class="fas fa-sign-in-alt"></i>
+                            <span class="d-none d-lg-inline">Masuk</span>
+                        </a>
+                        {% endif %}
+
+                        <!-- Wishlist -->
+                        <button class="action-btn wishlist-btn" title="Wishlist">
+                            <i class="fas fa-heart"></i>
+                            <span class="action-badge">0</span>
+                        </button>
+
+                        <!-- Cart -->
+                        <a href="{% url 'cart' %}" class="action-btn cart-btn" title="Keranjang Belanja">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="action-badge">{{ cartItems|default:0 }}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Search (Collapsible) -->
+        <div class="collapse d-xl-none" id="mobile-search">
+            <div class="container py-3">
+                <form action="{% url 'store' %}" method="get">
+                    <div class="search-input-group">
+                        <div class="search-input-wrapper">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" 
+                                   name="search" 
+                                   class="search-input" 
+                                   placeholder="Cari produk..." 
+                                   value="{{ request.GET.search|default:'' }}">
+                        </div>
+                        <button type="submit" class="search-btn">Cari</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    {% block breadcrumb %}{% endblock %}
+
+    <!-- Alert Messages -->
+    {% if messages %}
+    <div class="alerts-container">
+        <div class="container mt-3">
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
+                <div class="alert-content">
+                    {% if message.tags == 'error' %}
+                    <i class="fas fa-exclamation-circle me-2"></i>
+                    {% elif message.tags == 'warning' %}
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    {% elif message.tags == 'success' %}
+                    <i class="fas fa-check-circle me-2"></i>
+                    {% else %}
+                    <i class="fas fa-info-circle me-2"></i>
+                    {% endif %}
+                    <span>{{ message }}</span>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        {% block content %}
+        <!-- Page content goes here -->
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Brand & Description -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-section">
+                            <div class="footer-brand mb-4">
+                                <div class="brand-logo">
+                                    <svg class="brand-icon" viewBox="0 0 24 24" fill="none">
+                                        <path d="M7 4V2C7 1.45 7.45 1 8 1H16C16.55 1 17 1.45 17 2V4H20C20.55 4 21 4.45 21 5S20.55 6 20 6H19V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V6H4C3.45 6 3 5.55 3 5S3.45 4 4 4H7ZM9 3V4H15V3H9ZM7 6V19H17V6H7Z" fill="currentColor"/>
+                                        <path d="M9 8V17H11V8H9ZM13 8V17H15V8H13Z" fill="currentColor"/>
+                                    </svg>
+                                    <span class="brand-text">Manipi</span>
+                                </div>
+                            </div>
+                            <p class="footer-description">
+                                Platform e-commerce premium yang menghadirkan pengalaman berbelanja online terbaik 
+                                dengan koleksi produk berkualitas tinggi dan layanan pelanggan yang excellent.
+                            </p>
+                            <div class="footer-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+62 21 1234 5678</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>hello@manipi.com</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Jakarta, Indonesia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="footer-section">
+                            <h5 class="footer-title">Navigasi</h5>
+                            <ul class="footer-links">
+                                <li><a href="{% url 'store' %}">Beranda</a></li>
+                                <li><a href="{% url 'category_list' %}">Kategori</a></li>
+                                <li><a href="#">Promo</a></li>
+                                <li><a href="#">Tentang Kami</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Customer Service -->
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <div class="footer-section">
+                            <h5 class="footer-title">Layanan</h5>
+                            <ul class="footer-links">
+                                <li><a href="#">Pusat Bantuan</a></li>
+                                <li><a href="#">Cara Pembelian</a></li>
+                                <li><a href="#">Pengiriman</a></li>
+                                <li><a href="#">Pengembalian</a></li>
+                                <li><a href="#">Garansi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Account -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-section">
+                            <h5 class="footer-title">Akun</h5>
+                            <ul class="footer-links">
+                                {% if user.is_authenticated %}
+                                <li><a href="{% url 'profil' %}">Profil Saya</a></li>
+                                <li><a href="#">Pesanan</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="{% url 'logout' %}">Keluar</a></li>
+                                {% else %}
+                                <li><a href="{% url 'login' %}">Masuk</a></li>
+                                <li><a href="{% url 'register' %}">Daftar</a></li>
+                                {% endif %}
+                                <li><a href="#">Lacak Pesanan</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-section">
+                            <h5 class="footer-title">Newsletter</h5>
+                            <p class="footer-newsletter-text">
+                                Dapatkan penawaran eksklusif dan update produk terbaru.
+                            </p>
+                            <form class="newsletter-form">
+                                <div class="newsletter-input-group">
+                                    <input type="email" class="newsletter-input" placeholder="Email Anda" required>
+                                    <button type="submit" class="newsletter-btn">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <!-- Social Media -->
+                            <div class="social-links">
+                                <a href="#" class="social-link" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="copyright">
+                            <span>&copy; {% now "Y" %} Manipi. All rights reserved.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#">Syarat & Ketentuan</a>
+                            <a href="#">Kebijakan Privasi</a>
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" title="Kembali ke atas">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Manipi",
+        "url": "{{ request.build_absolute_uri }}",
+        "logo": "{% static 'images/logo.png' %}",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-21-1234-5678",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://www.facebook.com/manipi",
+            "https://www.instagram.com/manipi",
+            "https://www.twitter.com/manipi"
+        ]
+    }
+    </script>
+</body>
+</html>

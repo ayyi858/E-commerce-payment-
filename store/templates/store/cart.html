@@ -1,0 +1,150 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+<div class="container py-5">
+    <!-- Judul Halaman -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="fw-bold mb-0">Keranjang Belanja</h2>
+            <p class="text-muted">Periksa barang sebelum melanjutkan ke pembayaran</p>
+        </div>
+    </div>
+
+    <div class="row g-4">
+        <!-- Daftar Barang -->
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+                <div class="card-header bg-white py-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Daftar Barang ({{ cartItems }})</h5>
+                        <a href="{% url 'store' %}" class="btn btn-outline-primary btn-sm">
+                            <i class="fas fa-arrow-left me-2"></i>Lanjut Belanja
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    {% if items %}
+                        {% for item in items %}
+                        <div class="cart-item {% if not forloop.last %}border-bottom{% endif %} pb-4 mb-4">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <!-- Gambar Produk -->
+                                <div class="col-md-2 col-4 mb-3 mb-md-0">
+                                    <img class="img-fluid rounded-3 shadow-sm" 
+                                         src="{{ item.product.imageURL }}" 
+                                         alt="{{ item.product.name }}"
+                                         style="aspect-ratio: 1; object-fit: cover;">
+                                </div>
+                                <!-- Detail Produk -->
+                                <div class="col-md-4 col-8 ps-md-4">
+                                    <h6 class="text-dark fw-bold mb-2">{{ item.product.name }}</h6>
+                                    <div class="text-muted small mb-0">
+                                        <p class="mb-1">Kategori: {{ item.product.kategori }}</p>
+                                        <p class="mb-0">Harga: Rp{{ item.product.price|floatformat:0 }}</p>
+                                    </div>
+                                </div>
+                                <!-- Kontrol Jumlah -->
+                                <div class="col-md-3 col-6 mt-3 mt-md-0">
+                                    <div class="d-flex align-items-center justify-content-center quantity-controls">
+                                        <button data-product="{{ item.product.id }}" 
+                                                data-action="remove" 
+                                                class="btn btn-light border-0 shadow-sm update-cart"
+                                                title="Kurangi jumlah">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <span class="mx-3 fw-bold">{{ item.quantity }}</span>
+                                        <button data-product="{{ item.product.id }}" 
+                                                data-action="add" 
+                                                class="btn btn-light border-0 shadow-sm update-cart"
+                                                title="Tambah jumlah">
+                                            <i class="fas fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Total Harga -->
+                                <div class="col-md-2 col-4 mt-3 mt-md-0 text-md-center">
+                                    <p class="fw-bold text-success mb-0">Rp{{ item.get_total|floatformat:0 }}</p>
+                                </div>
+                                <!-- Tombol Hapus -->
+                                <div class="col-md-1 col-2 mt-3 mt-md-0 text-end">
+                                    <button data-product="{{ item.product.id }}" 
+                                            data-action="delete" 
+                                            class="btn btn-outline-danger btn-sm update-cart"
+                                            title="Hapus barang">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="text-center py-5">
+                            <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+                            <h5>Keranjang Belanja Kosong</h5>
+                            <p class="text-muted">Silakan tambahkan barang ke keranjang</p>
+                            <a href="{% url 'store' %}" class="btn btn-primary">Mulai Belanja</a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Ringkasan Pesanan -->
+        <div class="col-lg-4">
+            <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-header bg-white py-3">
+                    <h5 class="mb-0">Ringkasan Belanja</h5>
+                </div>
+                <div class="card-body p-4">
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="text-muted">Total Harga</span>
+                        <span class="fw-bold">Rp{{ order.get_cart_total|floatformat:0 }}</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span class="text-muted">Biaya Pengiriman</span>
+                        <span class="text-success">Gratis</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="fw-bold">Total Pembayaran</span>
+                        <span class="fw-bold text-success">Rp{{ order.get_cart_total|floatformat:0 }}</span>
+                    </div>
+                    <a href="{% url 'checkout' %}" 
+                       class="btn btn-success w-100 py-3 fw-bold {% if not items %}disabled{% endif %}">
+                        <i class="fas fa-lock me-2"></i>Lanjut ke Pembayaran
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.quantity-controls .btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    transition: all 0.2s;
+}
+
+.quantity-controls .btn:hover {
+    background: #e9ecef;
+}
+
+.cart-item:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+</style>
+{% endblock content %}

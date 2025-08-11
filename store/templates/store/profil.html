@@ -1,0 +1,76 @@
+{% extends 'store/store.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/profile.css' %}">
+
+<div class="profile-container">
+    <div class="profile-wrapper">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="avatar-container">
+                    <img src="{% if profile.avatar %}{{ profile.avatar.url }}{% else %}{% static 'images/default-avatar.png' %}{% endif %}" 
+                    alt="Profile Picture" 
+                    class="avatar">
+               
+                </div>
+                <h1 class="profile-name">{{ request.user.username }}</h1>
+                <p class="profile-bio">{{ profile.bio|default:"No bio yet" }}</p>
+            </div>
+        </div>
+
+        <!-- Profile Information -->
+        <div class="profile-content">
+            <!-- Contact Information -->
+            <div class="profile-card">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>Email</p>
+                        <span>{{ request.user.email|default:"Not provided" }}</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <p>Phone</p>
+                        <span>{{ profile.phone|default:"Not provided" }}</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <p>Address</p>
+                        <span>{{ profile.address|default:"Not provided" }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="profile-card">
+                <h2>Account Stats</h2>
+                <div class="info-item">
+                    <p>Member Since</p>
+                    <span>{{ request.user.date_joined|date:"F j, Y" }}</span>
+                </div>
+                <div class="info-item">
+                    <p>Orders</p>
+                    <span>{{ profile.orders_count|default:"0" }}</span>
+                </div>
+                <div class="info-item">
+                    <p>Reviews</p>
+                    <span>{{ profile.reviews_count|default:"0" }}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="profile-actions">
+            <a href="{% url 'edit_profile' %}" class="edit-btn">Edit Profile</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

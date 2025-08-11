@@ -1,0 +1,128 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% load humanize %}
+{% block content %}
+
+<section class="checkout-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h4 class="mb-0">Detail Pengiriman</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="checkout-form">
+                            {% csrf_token %}
+                            <input type="hidden" name="order_id" value="{{ ORDER_ID }}">
+                            <input type="hidden" name="total_amount" value="{{ TOTAL_AMOUNT }}">
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="name" name="name" required 
+                                           value="{{ request.user.username }}" {% if request.user.is_authenticated %}readonly{% endif %}>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required
+                                           value="{{ request.user.email }}" {% if request.user.is_authenticated %}readonly{% endif %}>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">No. Telepon</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" required
+                                       value="{{ request.user.profile.phone|default:'' }}">
+                                <div class="form-text text-muted">Format: +62812345678 atau 08123456789</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Alamat Lengkap</label>
+                                <textarea class="form-control" id="address" name="address" rows="3" required>{{ request.user.profile.address|default:'' }}</textarea>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="city" class="form-label">Kota</label>
+                                    <input type="text" class="form-control" id="city" name="city" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="state" class="form-label">Provinsi</label>
+                                    <input type="text" class="form-control" id="state" name="state" required>
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <label for="zipcode" class="form-label">Kode Pos</label>
+                                    <input type="text" class="form-control" id="zipcode" name="zipcode" required>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-header bg-white">
+                        <h4 class="mb-0">Ringkasan Pesanan</h4>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            {% for item in items %}
+                            <li class="list-group-item d-flex justify-content-between lh-sm border-0 py-1">
+                                <div>
+                                    <h6 class="my-0">{{ item.product.name }} x{{ item.quantity }}</h6>
+                                    <small class="text-muted">{{ item.product.format_harga }}</small>
+                                </div>
+                                <span class="text-muted">Rp{{ item.get_total|floatformat:"0"|intcomma }}</span>
+                            </li>
+                            {% endfor %}
+                            <li class="list-group-item d-flex justify-content-between border-top mt-2">
+                                <span>Total</span>
+                                <strong>Rp{{ order.get_cart_total|floatformat:"0"|intcomma }}</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <button type="submit" class="btn btn-primary btn-lg w-100" id="payment-button" 
+                                form="checkout-form">Bayar Sekarang</button>
+                    </div>
+                </div>
+                
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Metode Pembayaran</h5>
+                        <p class="card-text small">Anda akan diarahkan ke halaman pembayaran Midtrans untuk menyelesaikan transaksi.</p>
+                        <div class="payment-methods-icons">
+                            <div class="payment-method-item">
+                                <i class="fab fa-cc-visa" style="color: #1a1f71; font-size: 2rem;"></i>
+                                <span>Visa</span>
+                            </div>
+                            <div class="payment-method-item">
+                                <i class="fab fa-cc-mastercard" style="color: #eb001b; font-size: 2rem;"></i>
+                                <span>Mastercard</span>
+                            </div>
+                            <div class="payment-method-item">
+                                <i class="fas fa-university" style="color: #2563eb; font-size: 2rem;"></i>
+                                <span>Bank Transfer</span>
+                            </div>
+                            <div class="payment-method-item">
+                                <i class="fas fa-wallet" style="color: #059669; font-size: 2rem;"></i>
+                                <span>E-Wallet</span>
+                            </div>
+                            <div class="payment-method-item">
+                                <i class="fas fa-store" style="color: #dc2626; font-size: 2rem;"></i>
+                                <span>Convenience Store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Load the payment JavaScript -->
+<script src="{% static 'js/checkout.js' %}"></script>
+
+{% endblock content %}

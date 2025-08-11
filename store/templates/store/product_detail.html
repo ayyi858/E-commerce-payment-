@@ -1,0 +1,515 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% load humanize %}
+{% block content %}
+
+<section class="product-detail-section py-5">
+    <div class="container">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'store' %}">Toko</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'store' %}?category={{ product.kategori }}">{{ product.kategori }}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ product.name }}</li>
+            </ol>
+        </nav>
+
+        <div class="row g-4">
+            <!-- Product Images Column -->
+            <div class="col-lg-5">
+                <div class="product-gallery card border-0 shadow-sm">
+                    <div class="card-body p-0">
+                        <!-- Main Image -->
+                        <div class="main-image-container">
+                            <img src="{{ product.imageURL }}" alt="{{ product.name }}" id="mainImage" class="img-fluid">
+                            <div class="product-badges">
+                                {% if product.discount %}
+                                <span class="badge bg-danger">{{ product.discount }}% OFF</span>
+                                {% endif %}
+                                {% if product.digital %}
+                                <span class="badge bg-info text-dark">Digital</span>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <!-- Thumbnail Images (if any) -->
+                        <div class="thumbnails-container d-flex mt-3 px-3 pb-3">
+                            <div class="thumbnail active" data-src="{{ product.imageURL }}">
+                                <img src="{{ product.imageURL }}" alt="Thumbnail 1" class="img-fluid rounded">
+                            </div>
+                            <!-- Placeholder thumbnails, replace with actual related images if available -->
+                            <div class="thumbnail" data-src="{{ product.imageURL }}">
+                                <img src="{{ product.imageURL }}" alt="Thumbnail 2" class="img-fluid rounded">
+                            </div>
+                            <div class="thumbnail" data-src="{{ product.imageURL }}">
+                                <img src="{{ product.imageURL }}" alt="Thumbnail 3" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info Column -->
+            <div class="col-lg-7">
+                <div class="product-info">
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-{{ product.kategori|lower }}-soft me-2">{{ product.kategori }}</span>
+                            <div class="product-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <span class="ms-1">4.8</span>
+                                <span class="text-muted ms-2">(120 ulasan)</span>
+                            </div>
+                        </div>
+                        <h1 class="product-title fs-2 fw-bold mb-1">{{ product.name }}</h1>
+                        <p class="text-muted mb-2">SKU: PRD-{{ product.id|stringformat:"06d" }}</p>
+                    </div>
+
+                    <div class="product-price-container mb-4">
+                        <div class="d-flex align-items-center">
+                            <div class="current-price fs-3 fw-bold me-3">{{ product.format_harga }}</div>
+                            {% if product.discount %}
+                            <div class="original-price text-muted text-decoration-line-through">Rp{{ product.price|add:50000|floatformat:0|intcomma }}</div>
+                            <div class="discount-badge ms-3">
+                                <span class="badge bg-danger">{{ product.discount }}% OFF</span>
+                            </div>
+                            {% endif %}
+                        </div>
+                        <p class="stock-status mt-2">
+                            <i class="fas fa-check-circle text-success me-1"></i>
+                            <span class="fw-medium">Tersedia</span> - Siap dikirim dari Manipi Store
+                        </p>
+                    </div>
+
+                    <div class="product-description mb-4">
+                        <h5 class="fw-bold mb-3">Deskripsi Produk</h5>
+                        <p class="text-muted">
+                            {{ product.description|default:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ut aliquam tincidunt, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nisl. Sed euismod, nisl ut aliquam tincidunt, nisl nisl aliquet nisl, eget aliquam nisl nisl eu nisl." }}
+                        </p>
+                    </div>
+
+                    <!-- Product Variants -->
+                    <div class="product-variants mb-4">
+                        <!-- Color Variant -->
+                        <div class="variant-group mb-3">
+                            <h6 class="fw-bold mb-2">Warna</h6>
+                            <div class="color-options d-flex gap-2">
+                                <button class="color-option rounded-circle active" style="background-color: #3B82F6;" data-bs-toggle="tooltip" title="Biru"></button>
+                                <button class="color-option rounded-circle" style="background-color: #10B981;" data-bs-toggle="tooltip" title="Hijau"></button>
+                                <button class="color-option rounded-circle" style="background-color: #EF4444;" data-bs-toggle="tooltip" title="Merah"></button>
+                                <button class="color-option rounded-circle" style="background-color: #111827;" data-bs-toggle="tooltip" title="Hitam"></button>
+                            </div>
+                        </div>
+                        
+                        <!-- Size Variant (if applicable) -->
+                        <div class="variant-group mb-3">
+                            <h6 class="fw-bold mb-2">Ukuran</h6>
+                            <div class="size-options d-flex flex-wrap gap-2">
+                                <button class="size-option btn btn-outline-secondary">S</button>
+                                <button class="size-option btn btn-outline-secondary active">M</button>
+                                <button class="size-option btn btn-outline-secondary">L</button>
+                                <button class="size-option btn btn-outline-secondary">XL</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart Section -->
+                    <div class="add-to-cart-section mb-4">
+                        <h6 class="fw-bold mb-2">Jumlah</h6>
+                        <div class="d-flex align-items-center">
+                            <div class="quantity-control d-flex align-items-center me-3">
+                                <button class="btn btn-sm btn-outline-secondary quantity-btn" data-action="decrease">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" class="form-control quantity-input mx-2" value="1" min="1" max="99">
+                                <button class="btn btn-sm btn-outline-secondary quantity-btn" data-action="increase">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <button class="btn btn-primary flex-grow-1 add-to-cart-btn update-cart" data-product="{{ product.id }}" data-action="add">
+                                <i class="fas fa-shopping-cart me-2"></i>
+                                Tambah ke Keranjang
+                            </button>
+                            <button class="btn btn-outline-secondary ms-2 add-to-wishlist-btn" data-product="{{ product.id }}">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Additional Product Info -->
+                    <div class="additional-info">
+                        <div class="accordion" id="productAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <i class="fas fa-truck me-2"></i> Informasi Pengiriman
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#productAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Pengiriman ke seluruh Indonesia</li>
+                                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Estimasi 2-3 hari kerja</li>
+                                            <li><i class="fas fa-check text-success me-2"></i> Gratis ongkir untuk pembelian di atas Rp500.000</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fas fa-shield-alt me-2"></i> Garansi & Pengembalian
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#productAccordion">
+                                    <div class="accordion-body">
+                                        <ul class="list-unstyled mb-0">
+                                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Garansi resmi 1 tahun</li>
+                                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 30 hari kebijakan pengembalian</li>
+                                            <li><i class="fas fa-check text-success me-2"></i> 100% uang kembali jika barang tidak sesuai</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products mt-5">
+            <h3 class="section-title mb-4">Produk Terkait</h3>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                {% for related in related_products %}
+                <div class="col">
+                    <div class="card product-card h-100 border-0 shadow-sm">
+                        <div class="position-relative">
+                            <a href="{% url 'product_detail' related.id %}">
+                                <img src="{{ related.imageURL }}" class="card-img-top" alt="{{ related.name }}">
+                            </a>
+                            <button class="btn btn-sm btn-outline-light position-absolute top-0 end-0 m-2 rounded-circle add-to-wishlist-sm">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-{{ related.kategori|lower }}-soft">{{ related.kategori }}</span>
+                                <div class="product-rating small">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">
+                                <a href="{% url 'product_detail' related.id %}" class="text-decoration-none text-dark">{{ related.name }}</a>
+                            </h5>
+                            <p class="card-text fw-bold">{{ related.format_harga }}</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0">
+                            <button class="btn btn-primary w-100 update-cart" data-product="{{ related.id }}" data-action="add">
+                                <i class="fas fa-shopping-cart me-2"></i>
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {% empty %}
+                <div class="col-12">
+                    <div class="alert alert-info">
+                        Tidak ada produk terkait untuk ditampilkan.
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CSS Styles for Product Detail -->
+<style>
+    /* Product Gallery */
+    .product-gallery {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    
+    .main-image-container {
+        position: relative;
+        padding-top: 100%;
+    }
+    
+    .main-image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .product-badges {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .thumbnails-container {
+        gap: 10px;
+    }
+    
+    .thumbnail {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.2s;
+    }
+    
+    .thumbnail.active {
+        border-color: #4F46E5;
+    }
+    
+    .thumbnail img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* Product Info */
+    .product-title {
+        color: #111827;
+        line-height: 1.2;
+    }
+    
+    .current-price {
+        color: #111827;
+    }
+    
+    .original-price {
+        font-size: 1.125rem;
+    }
+    
+    .stock-status {
+        font-size: 0.875rem;
+    }
+    
+    /* Variants */
+    .color-option {
+        width: 32px;
+        height: 32px;
+        border: 2px solid #fff;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        transition: all 0.2s;
+        cursor: pointer;
+    }
+    
+    .color-option.active {
+        transform: scale(1.15);
+        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #4F46E5;
+    }
+    
+    .size-option {
+        min-width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+    }
+    
+    .size-option.active {
+        background-color: #4F46E5;
+        color: white;
+        border-color: #4F46E5;
+    }
+    
+    /* Quantity Control */
+    .quantity-control {
+        width: 120px;
+    }
+    
+    .quantity-input {
+        width: 50px;
+        text-align: center;
+    }
+    
+    .add-to-wishlist-btn {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Soft colors for category badges */
+    .bg-elektronik-soft {
+        background-color: rgba(59, 130, 246, 0.15);
+        color: #1E40AF;
+    }
+    
+    .bg-pakaian-soft {
+        background-color: rgba(16, 185, 129, 0.15);
+        color: #065F46;
+    }
+    
+    .bg-makanan-soft {
+        background-color: rgba(245, 158, 11, 0.15);
+        color: #92400E;
+    }
+    
+    .bg-minuman-soft {
+        background-color: rgba(139, 92, 246, 0.15);
+        color: #5B21B6;
+    }
+    
+    .bg-lainnya-soft {
+        background-color: rgba(107, 114, 128, 0.15);
+        color: #374151;
+    }
+    
+    /* Related Products */
+    .product-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    }
+    
+    .add-to-wishlist-sm {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        background-color: rgba(255,255,255,0.8);
+        color: #4B5563;
+        opacity: 0.9;
+        transition: all 0.2s;
+    }
+    
+    .add-to-wishlist-sm:hover {
+        color: #EF4444;
+        background-color: white;
+        opacity: 1;
+    }
+</style>
+
+<!-- JavaScript for Product Detail Functionality -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+        
+        // Thumbnail Image Gallery
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('mainImage');
+        
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', function() {
+                // Update active state
+                thumbnails.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Update main image
+                const imgSrc = this.dataset.src;
+                mainImage.src = imgSrc;
+                
+                // Add zoom effect
+                mainImage.classList.add('zoom-in');
+                setTimeout(() => {
+                    mainImage.classList.remove('zoom-in');
+                }, 300);
+            });
+        });
+        
+        // Color Options
+        const colorOptions = document.querySelectorAll('.color-option');
+        colorOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                colorOptions.forEach(o => o.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Size Options
+        const sizeOptions = document.querySelectorAll('.size-option');
+        sizeOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                sizeOptions.forEach(o => o.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Quantity Controls
+        const quantityInput = document.querySelector('.quantity-input');
+        const quantityBtns = document.querySelectorAll('.quantity-btn');
+        
+        quantityBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const action = this.dataset.action;
+                let currentValue = parseInt(quantityInput.value);
+                
+                if (action === 'increase') {
+                    if (currentValue < 99) {
+                        quantityInput.value = currentValue + 1;
+                    }
+                } else if (action === 'decrease') {
+                    if (currentValue > 1) {
+                        quantityInput.value = currentValue - 1;
+                    }
+                }
+            });
+        });
+        
+        // Add to Wishlist functionality
+        const wishlistBtns = document.querySelectorAll('.add-to-wishlist-btn, .add-to-wishlist-sm');
+        wishlistBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                
+                if (icon.classList.contains('far')) {
+                    icon.classList.remove('far');
+                    icon.classList.add('fas');
+                    icon.style.color = '#EF4444';
+                    
+                    // Show alert (using the function from main.js)
+                    if (typeof showAlert === 'function') {
+                        showAlert('success', 'Produk ditambahkan ke wishlist');
+                    }
+                } else {
+                    icon.classList.remove('fas');
+                    icon.classList.add('far');
+                    icon.style.color = '';
+                    
+                    // Show alert
+                    if (typeof showAlert === 'function') {
+                        showAlert('info', 'Produk dihapus dari wishlist');
+                    }
+                }
+            });
+        });
+        
+        // Update Add to Cart button with quantity
+        const addToCartBtn = document.querySelector('.add-to-cart-btn');
+        
+        if (addToCartBtn) {
+            quantityInput.addEventListener('change', function() {
+                const quantity = parseInt(this.value);
+                // You might want to store the quantity in a data attribute or modify your cart.js to handle quantity
+                addToCartBtn.dataset.quantity = quantity;
+            });
+        }
+    });
+</script>
+{% endblock content %}

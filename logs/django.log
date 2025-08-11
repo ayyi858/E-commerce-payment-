@@ -1,0 +1,1764 @@
+INFO 2025-08-11 18:48:37,480 autoreload 9052 12452 Watching for file changes with StatReloader
+INFO 2025-08-11 18:48:42,507 basehttp 9052 21700 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:48:42,905 basehttp 9052 21700 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:48:43,067 basehttp 9052 21700 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:48:43,233 basehttp 9052 21700 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:48:43,395 basehttp 9052 21700 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:13,226 autoreload 9052 12452 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\ecommerce\settings.py changed, reloading.
+INFO 2025-08-11 18:49:14,111 autoreload 13420 20304 Watching for file changes with StatReloader
+INFO 2025-08-11 18:49:18,458 basehttp 13420 584 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:18,578 basehttp 13420 584 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:18,761 basehttp 13420 584 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:18,897 basehttp 13420 584 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:20,297 basehttp 13420 584 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:54,732 autoreload 13420 20304 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\ecommerce\urls.py changed, reloading.
+INFO 2025-08-11 18:49:55,571 autoreload 7836 18804 Watching for file changes with StatReloader
+INFO 2025-08-11 18:49:58,107 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:59,461 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:59,623 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:59,798 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:49:59,953 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:50:00,090 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:50:30,185 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:51:18,413 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:51:18,716 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:51:18,897 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:51:19,053 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:51:19,217 basehttp 7836 21316 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:53:30,971 autoreload 7836 18804 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\ecommerce\urls.py changed, reloading.
+INFO 2025-08-11 18:53:31,876 autoreload 21768 8228 Watching for file changes with StatReloader
+INFO 2025-08-11 18:53:40,835 basehttp 21768 1660 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:53:40,851 basehttp 21768 1660 "GET /static/js/main.js HTTP/1.1" 304 0
+INFO 2025-08-11 18:53:40,934 basehttp 21768 1660 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:53:41,110 basehttp 21768 1660 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:53:41,290 basehttp 21768 1660 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:53:41,467 basehttp 21768 1660 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:53:41,616 basehttp 21768 1660 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:54:40,029 basehttp 21768 8656 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:54:40,174 basehttp 21768 8656 "GET /static/css/main.css HTTP/1.1" 200 18588
+INFO 2025-08-11 18:54:40,177 basehttp 21768 8656 "GET /static/css/store.css HTTP/1.1" 200 21101
+INFO 2025-08-11 18:54:40,180 basehttp 21768 8656 "GET /static/js/main.js HTTP/1.1" 200 32556
+INFO 2025-08-11 18:54:40,184 basehttp 21768 8656 "GET /static/js/store.js HTTP/1.1" 200 28755
+WARNING 2025-08-11 18:54:43,320 basehttp 21768 8656 "GET /static/images/favicon.png HTTP/1.1" 404 1914
+WARNING 2025-08-11 18:54:43,333 basehttp 21768 17376 "GET /static/images/favicon.svg HTTP/1.1" 404 1914
+INFO 2025-08-11 18:55:57,097 basehttp 21768 18708 "GET / HTTP/1.1" 200 32058
+INFO 2025-08-11 18:55:57,140 basehttp 21768 18708 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2025-08-11 18:55:57,141 basehttp 21768 17028 "GET /static/js/main.js HTTP/1.1" 304 0
+INFO 2025-08-11 18:56:08,024 basehttp 21768 9540 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:56:08,068 basehttp 21768 9540 "GET /static/css/main.css HTTP/1.1" 200 18588
+INFO 2025-08-11 18:56:08,068 basehttp 21768 21824 "GET /static/css/store.css HTTP/1.1" 200 21101
+INFO 2025-08-11 18:56:08,072 basehttp 21768 21824 "GET /static/js/store.js HTTP/1.1" 200 28755
+INFO 2025-08-11 18:56:08,072 basehttp 21768 9540 "GET /static/js/main.js HTTP/1.1" 200 32556
+INFO 2025-08-11 18:56:10,441 basehttp 21768 21824 "GET /login/ HTTP/1.1" 200 3165
+INFO 2025-08-11 18:56:10,471 basehttp 21768 21824 "GET /static/css/login.css HTTP/1.1" 200 4190
+WARNING 2025-08-11 18:56:10,631 log 21768 21824 Not Found: /favicon.ico
+WARNING 2025-08-11 18:56:10,632 basehttp 21768 21824 "GET /favicon.ico HTTP/1.1" 404 6400
+INFO 2025-08-11 18:56:13,433 basehttp 21768 21824 "GET /login/ HTTP/1.1" 200 3165
+INFO 2025-08-11 18:56:13,475 basehttp 21768 21824 "GET /static/css/login.css HTTP/1.1" 200 4190
+INFO 2025-08-11 18:56:15,010 basehttp 21768 21824 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 18:56:15,042 basehttp 21768 21824 "GET /static/css/main.css HTTP/1.1" 200 18588
+INFO 2025-08-11 18:56:15,042 basehttp 21768 9540 "GET /static/css/store.css HTTP/1.1" 200 21101
+INFO 2025-08-11 18:56:15,045 basehttp 21768 1620 "GET /static/js/main.js HTTP/1.1" 200 32556
+INFO 2025-08-11 18:56:15,046 basehttp 21768 22740 "GET /static/js/store.js HTTP/1.1" 200 28755
+INFO 2025-08-11 18:56:17,235 basehttp 21768 22740 "GET / HTTP/1.1" 200 30278
+INFO 2025-08-11 19:07:31,099 basehttp 21768 5760 "GET /?search=makassar&category= HTTP/1.1" 200 30922
+INFO 2025-08-11 19:07:31,124 basehttp 21768 5760 "GET /static/css/store.css HTTP/1.1" 304 0
+INFO 2025-08-11 19:07:31,130 basehttp 21768 5760 "GET /static/js/store.js HTTP/1.1" 304 0
+INFO 2025-08-11 19:08:23,288 basehttp 21768 9540 "GET / HTTP/1.1" 200 32058
+INFO 2025-08-11 19:08:23,322 basehttp 21768 9540 "GET /static/js/main.js HTTP/1.1" 304 0
+WARNING 2025-08-11 19:08:25,643 log 21768 9540 Not Found: /admincu
+WARNING 2025-08-11 19:08:25,644 basehttp 21768 9540 "GET /admincu HTTP/1.1" 404 6388
+WARNING 2025-08-11 19:08:34,018 log 21768 9540 Not Found: /admincu
+WARNING 2025-08-11 19:08:34,020 basehttp 21768 9540 "GET /admincu HTTP/1.1" 404 6388
+INFO 2025-08-11 19:08:38,929 basehttp 21768 9540 "GET /admin HTTP/1.1" 301 0
+INFO 2025-08-11 19:08:38,993 basehttp 21768 24164 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-11 19:08:39,583 basehttp 21768 24164 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 16895
+INFO 2025-08-11 19:08:39,625 basehttp 21768 24164 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2025-08-11 19:08:39,636 basehttp 21768 7316 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-08-11 19:08:39,637 basehttp 21768 20984 "GET /static/admin_interface/css/change-form.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1125
+INFO 2025-08-11 19:08:39,637 basehttp 21768 17284 "GET /static/admin_interface/css/changelist.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1517
+INFO 2025-08-11 19:08:39,640 basehttp 21768 24164 "GET /static/admin_interface/css/fieldsets.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 499
+INFO 2025-08-11 19:08:39,642 basehttp 21768 24420 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2025-08-11 19:08:39,644 basehttp 21768 7316 "GET /static/admin_interface/css/file-upload.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1169
+INFO 2025-08-11 19:08:39,652 basehttp 21768 4856 "GET /static/admin_interface/css/admin-interface.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 18580
+INFO 2025-08-11 19:08:39,656 basehttp 21768 20984 "GET /static/admin_interface/css/header.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1015
+INFO 2025-08-11 19:08:39,657 basehttp 21768 17284 "GET /static/admin_interface/css/inlines.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 2715
+INFO 2025-08-11 19:08:39,658 basehttp 21768 24420 "GET /static/admin_interface/css/language-chooser.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1734
+INFO 2025-08-11 19:08:39,662 basehttp 21768 24164 "GET /static/admin_interface/css/jquery.ui.tabs.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 5481
+INFO 2025-08-11 19:08:39,666 basehttp 21768 4856 "GET /static/admin_interface/css/list-filter-dropdown.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 785
+INFO 2025-08-11 19:08:39,673 basehttp 21768 17284 "GET /static/admin_interface/css/modules.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 404
+INFO 2025-08-11 19:08:39,674 basehttp 21768 7316 "GET /static/admin_interface/css/list-filter.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1054
+INFO 2025-08-11 19:08:39,674 basehttp 21768 24420 "GET /static/admin_interface/css/nav-sidebar.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 2377
+INFO 2025-08-11 19:08:39,675 basehttp 21768 20984 "GET /static/admin_interface/css/login.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1240
+INFO 2025-08-11 19:08:39,676 basehttp 21768 24164 "GET /static/admin_interface/css/paginator.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 797
+INFO 2025-08-11 19:08:39,689 basehttp 21768 4856 "GET /static/admin_interface/css/object-tools.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 319
+INFO 2025-08-11 19:08:39,693 basehttp 21768 24420 "GET /static/admin_interface/css/sticky-form-controls.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 2437
+INFO 2025-08-11 19:08:39,693 basehttp 21768 7316 "GET /static/admin_interface/css/tabbed-changeform.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 2013
+INFO 2025-08-11 19:08:39,698 basehttp 21768 24164 "GET /static/admin_interface/css/third-party/ckeditor.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 2720
+INFO 2025-08-11 19:08:39,699 basehttp 21768 20984 "GET /static/admin_interface/css/widgets.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 5259
+INFO 2025-08-11 19:08:39,701 basehttp 21768 17284 "GET /static/admin_interface/css/rtl.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1016
+INFO 2025-08-11 19:08:39,703 basehttp 21768 4856 "GET /static/admin_interface/css/third-party/import-export.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 189
+INFO 2025-08-11 19:08:39,709 basehttp 21768 24420 "GET /static/admin_interface/css/third-party/json-widget.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 993
+INFO 2025-08-11 19:08:39,710 basehttp 21768 7316 "GET /static/admin_interface/css/third-party/modeltranslation.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 356
+INFO 2025-08-11 19:08:39,711 basehttp 21768 24164 "GET /static/admin_interface/css/third-party/rangefilter.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1238
+INFO 2025-08-11 19:08:39,717 basehttp 21768 20984 "GET /static/admin_interface/css/third-party/streamfield.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 6407
+INFO 2025-08-11 19:08:39,717 basehttp 21768 17284 "GET /static/admin_interface/css/third-party/sorl-thumbnail.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1451
+INFO 2025-08-11 19:08:39,724 basehttp 21768 4856 "GET /static/admin_interface/css/third-party/tinymce.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 78
+INFO 2025-08-11 19:08:39,726 basehttp 21768 24420 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2025-08-11 19:08:39,727 basehttp 21768 20984 "GET /static/admin/css/responsive_rtl.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 1864
+INFO 2025-08-11 19:08:39,744 basehttp 21768 24164 "GET /static/admin/css/responsive.css?v=0cfa230e56a1ce0d7822440cf565e3d9919e973fec6b57753b0df2a7 HTTP/1.1" 200 17905
+INFO 2025-08-11 19:08:39,744 basehttp 21768 7316 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2025-08-11 19:08:39,755 basehttp 21768 24164 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-08-11 19:08:39,756 basehttp 21768 7316 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2025-08-11 19:08:41,772 basehttp 21768 7316 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 17054
+INFO 2025-08-11 19:09:26,409 basehttp 21768 7316 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-08-11 19:09:26,516 basehttp 21768 7316 "GET /admin/ HTTP/1.1" 200 24114
+INFO 2025-08-11 19:09:26,545 basehttp 21768 7316 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-08-11 19:09:36,864 basehttp 21768 7316 "GET /admin/store/customer/ HTTP/1.1" 200 26276
+INFO 2025-08-11 19:09:36,889 basehttp 21768 7316 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2025-08-11 19:09:36,907 basehttp 21768 24420 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-08-11 19:09:36,907 basehttp 21768 20984 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-08-11 19:09:36,908 basehttp 21768 17284 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2025-08-11 19:09:36,922 basehttp 21768 24420 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-08-11 19:09:36,955 basehttp 21768 20984 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-08-11 19:09:36,955 basehttp 21768 4856 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2025-08-11 19:09:36,958 basehttp 21768 7316 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-11 19:09:36,998 basehttp 21768 24164 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-08-11 19:09:37,009 basehttp 21768 24164 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-08-11 19:09:37,123 basehttp 21768 17284 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-08-11 19:09:37,156 basehttp 21768 17284 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-08-11 19:09:40,094 basehttp 21768 17284 "GET /admin/store/orderitem/ HTTP/1.1" 200 26412
+INFO 2025-08-11 19:09:40,130 basehttp 21768 17284 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-11 19:09:41,628 basehttp 21768 17284 "GET /admin/store/product/ HTTP/1.1" 200 27289
+INFO 2025-08-11 19:09:41,672 basehttp 21768 17284 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-11 19:09:58,565 basehttp 21768 17284 "GET /admin/store/product/ HTTP/1.1" 200 62787
+INFO 2025-08-11 19:09:58,597 basehttp 21768 17284 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-11 19:10:06,813 basehttp 21768 5760 "GET / HTTP/1.1" 200 94284
+WARNING 2025-08-11 19:10:06,867 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:10:06,868 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6741
+INFO 2025-08-11 19:10:06,872 basehttp 21768 5760 "GET /static/css/store.css HTTP/1.1" 304 0
+WARNING 2025-08-11 19:10:06,887 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=2
+WARNING 2025-08-11 19:10:06,889 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D2 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:06,903 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=5
+WARNING 2025-08-11 19:10:06,903 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D5 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:06,912 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=6
+WARNING 2025-08-11 19:10:06,912 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D6 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:06,920 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=9
+WARNING 2025-08-11 19:10:06,920 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D9 HTTP/1.1" 404 6741
+INFO 2025-08-11 19:10:06,922 basehttp 21768 5760 "GET /static/js/main.js HTTP/1.1" 304 0
+WARNING 2025-08-11 19:10:06,931 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=10
+WARNING 2025-08-11 19:10:06,931 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D10 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:06,942 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=13
+WARNING 2025-08-11 19:10:06,943 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D13 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:06,950 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=14
+WARNING 2025-08-11 19:10:06,951 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D14 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:06,962 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=17
+WARNING 2025-08-11 19:10:06,963 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D17 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:06,973 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=18
+WARNING 2025-08-11 19:10:06,974 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D18 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:06,982 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=21
+WARNING 2025-08-11 19:10:06,983 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D21 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:06,995 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=22
+WARNING 2025-08-11 19:10:06,996 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D22 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,005 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=25
+WARNING 2025-08-11 19:10:07,006 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D25 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,021 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=26
+WARNING 2025-08-11 19:10:07,022 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D26 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,037 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=29
+WARNING 2025-08-11 19:10:07,038 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D29 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,050 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=30
+WARNING 2025-08-11 19:10:07,051 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D30 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,062 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=33
+WARNING 2025-08-11 19:10:07,062 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D33 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,070 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=34
+WARNING 2025-08-11 19:10:07,070 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D34 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,082 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=37
+WARNING 2025-08-11 19:10:07,082 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D37 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,102 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:10:07,106 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=38
+WARNING 2025-08-11 19:10:07,107 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,107 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D38 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,124 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=45
+WARNING 2025-08-11 19:10:07,128 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=42
+WARNING 2025-08-11 19:10:07,128 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D45 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,130 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D42 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:07,143 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=46
+WARNING 2025-08-11 19:10:07,144 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D46 HTTP/1.1" 404 6745
+INFO 2025-08-11 19:10:10,855 basehttp 21768 15628 "GET / HTTP/1.1" 200 94284
+WARNING 2025-08-11 19:10:10,879 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:10:10,888 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:10,920 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=5
+WARNING 2025-08-11 19:10:10,922 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=9
+WARNING 2025-08-11 19:10:10,929 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=2
+WARNING 2025-08-11 19:10:10,932 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=6
+WARNING 2025-08-11 19:10:10,934 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=10
+WARNING 2025-08-11 19:10:10,935 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D5 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:10,935 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D2 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:10,936 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D9 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:10,940 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=13
+WARNING 2025-08-11 19:10:10,941 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D6 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:10,942 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D10 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:10,954 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D13 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:10,974 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=17
+WARNING 2025-08-11 19:10:10,976 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=14
+WARNING 2025-08-11 19:10:10,979 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=18
+WARNING 2025-08-11 19:10:10,983 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=21
+WARNING 2025-08-11 19:10:10,987 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=22
+WARNING 2025-08-11 19:10:10,987 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D17 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:10,988 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D14 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:10,988 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D18 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:10,991 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=25
+WARNING 2025-08-11 19:10:10,991 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D21 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:10,992 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D22 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,004 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D25 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,022 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=30
+WARNING 2025-08-11 19:10:11,026 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=26
+WARNING 2025-08-11 19:10:11,031 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=34
+WARNING 2025-08-11 19:10:11,032 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D30 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,032 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D26 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,035 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=29
+WARNING 2025-08-11 19:10:11,038 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=33
+WARNING 2025-08-11 19:10:11,043 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=37
+WARNING 2025-08-11 19:10:11,043 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D34 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,046 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D29 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,047 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D33 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,051 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D37 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,067 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=38
+WARNING 2025-08-11 19:10:11,077 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=42
+WARNING 2025-08-11 19:10:11,080 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:10:11,084 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=45
+WARNING 2025-08-11 19:10:11,084 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D38 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,085 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D42 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,086 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D45 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,091 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=46
+WARNING 2025-08-11 19:10:11,092 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:11,095 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D46 HTTP/1.1" 404 6745
+INFO 2025-08-11 19:10:17,875 basehttp 21768 15972 "GET /?page=2&category=Semua HTTP/1.1" 200 94479
+WARNING 2025-08-11 19:10:17,909 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=49
+WARNING 2025-08-11 19:10:17,926 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D49 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:17,944 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=53
+WARNING 2025-08-11 19:10:17,957 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D53 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:17,961 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=54
+WARNING 2025-08-11 19:10:17,963 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=57
+WARNING 2025-08-11 19:10:17,965 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=58
+WARNING 2025-08-11 19:10:17,968 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=50
+WARNING 2025-08-11 19:10:17,975 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D54 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:17,979 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D57 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:17,982 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=61
+WARNING 2025-08-11 19:10:17,985 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D50 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:17,985 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D58 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:17,997 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D61 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,005 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=62
+WARNING 2025-08-11 19:10:18,012 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D62 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,025 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=65
+WARNING 2025-08-11 19:10:18,030 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=69
+WARNING 2025-08-11 19:10:18,032 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=66
+WARNING 2025-08-11 19:10:18,036 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=70
+WARNING 2025-08-11 19:10:18,037 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D65 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,038 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D66 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,039 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D69 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,043 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=73
+WARNING 2025-08-11 19:10:18,046 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D70 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,053 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=74
+WARNING 2025-08-11 19:10:18,057 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D73 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,062 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D74 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,078 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=77
+WARNING 2025-08-11 19:10:18,080 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=81
+WARNING 2025-08-11 19:10:18,086 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=78
+WARNING 2025-08-11 19:10:18,090 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=82
+WARNING 2025-08-11 19:10:18,090 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D77 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,091 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D81 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,092 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D78 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,095 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=85
+WARNING 2025-08-11 19:10:18,097 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D82 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,110 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D85 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,113 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=86
+WARNING 2025-08-11 19:10:18,125 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=89
+WARNING 2025-08-11 19:10:18,131 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=90
+WARNING 2025-08-11 19:10:18,131 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D86 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,132 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D90 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,132 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D89 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,135 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=93
+WARNING 2025-08-11 19:10:18,138 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=94
+WARNING 2025-08-11 19:10:18,139 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D93 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:18,139 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D94 HTTP/1.1" 404 6745
+INFO 2025-08-11 19:10:30,715 basehttp 21768 15628 "GET /login/ HTTP/1.1" 200 3165
+INFO 2025-08-11 19:10:30,754 basehttp 21768 15628 "GET /static/css/login.css HTTP/1.1" 200 4190
+INFO 2025-08-11 19:10:36,506 basehttp 21768 15628 "POST /login/ HTTP/1.1" 302 0
+INFO 2025-08-11 19:10:36,560 basehttp 21768 15628 "GET / HTTP/1.1" 200 96608
+WARNING 2025-08-11 19:10:36,638 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:10:36,643 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:36,655 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=10
+WARNING 2025-08-11 19:10:36,660 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=2
+WARNING 2025-08-11 19:10:36,662 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D10 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,662 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D2 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:36,668 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=5
+WARNING 2025-08-11 19:10:36,668 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=9
+WARNING 2025-08-11 19:10:36,669 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=6
+WARNING 2025-08-11 19:10:36,673 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D5 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:36,675 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D9 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:36,684 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D6 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:10:36,709 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=13
+WARNING 2025-08-11 19:10:36,715 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D13 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,724 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=17
+WARNING 2025-08-11 19:10:36,732 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=14
+WARNING 2025-08-11 19:10:36,734 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D17 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,736 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=18
+WARNING 2025-08-11 19:10:36,737 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D14 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,741 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=21
+WARNING 2025-08-11 19:10:36,746 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D18 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,752 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D21 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,752 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=22
+WARNING 2025-08-11 19:10:36,761 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D22 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,777 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=25
+WARNING 2025-08-11 19:10:36,785 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D25 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,795 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=26
+WARNING 2025-08-11 19:10:36,800 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=29
+WARNING 2025-08-11 19:10:36,806 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D26 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,807 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D29 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,810 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=30
+WARNING 2025-08-11 19:10:36,820 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=33
+WARNING 2025-08-11 19:10:36,825 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D30 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,825 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=34
+WARNING 2025-08-11 19:10:36,826 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D33 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,833 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D34 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,840 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=37
+WARNING 2025-08-11 19:10:36,851 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D37 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,871 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:10:36,873 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=38
+WARNING 2025-08-11 19:10:36,875 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,879 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D38 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,881 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=46
+WARNING 2025-08-11 19:10:36,882 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=42
+WARNING 2025-08-11 19:10:36,883 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D46 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,884 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D42 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:10:36,884 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=45
+WARNING 2025-08-11 19:10:36,885 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D45 HTTP/1.1" 404 6745
+INFO 2025-08-11 19:10:47,214 basehttp 21768 17284 "GET /admin/store/shippingaddress/ HTTP/1.1" 200 25644
+INFO 2025-08-11 19:10:47,251 basehttp 21768 17284 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-11 19:10:49,619 basehttp 21768 17284 "GET /admin/store/transaction/ HTTP/1.1" 200 26909
+INFO 2025-08-11 19:10:49,655 basehttp 21768 17284 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-11 19:11:11,133 basehttp 21768 22284 "POST /update_item/ HTTP/1.1" 200 16
+INFO 2025-08-11 19:11:11,135 basehttp 21768 5760 "POST /update_item/ HTTP/1.1" 200 16
+INFO 2025-08-11 19:11:15,740 basehttp 21768 5760 "GET /cart/ HTTP/1.1" 200 30586
+INFO 2025-08-11 19:11:15,762 basehttp 21768 5760 "GET /static/css/main.css HTTP/1.1" 304 0
+WARNING 2025-08-11 19:11:15,788 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:11:15,789 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6745
+ERROR 2025-08-11 19:11:18,368 log 21768 5760 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:11:18,378 basehttp 21768 5760 "POST /update_item/ HTTP/1.1" 500 84577
+ERROR 2025-08-11 19:11:21,852 log 21768 5760 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:11:21,858 basehttp 21768 5760 "POST /update_item/ HTTP/1.1" 500 84577
+ERROR 2025-08-11 19:11:23,370 log 21768 5760 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:11:23,372 basehttp 21768 5760 "POST /update_item/ HTTP/1.1" 500 84577
+INFO 2025-08-11 19:11:25,174 basehttp 21768 5760 "GET / HTTP/1.1" 200 96064
+WARNING 2025-08-11 19:11:25,251 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:11:25,255 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:11:25,276 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=10
+WARNING 2025-08-11 19:11:25,279 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=2
+WARNING 2025-08-11 19:11:25,281 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=9
+WARNING 2025-08-11 19:11:25,282 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D10 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,282 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=6
+WARNING 2025-08-11 19:11:25,283 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D2 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:11:25,286 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=5
+WARNING 2025-08-11 19:11:25,287 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D9 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:11:25,291 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D6 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:11:25,295 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D5 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:11:25,343 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=13
+WARNING 2025-08-11 19:11:25,348 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D13 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,349 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=14
+WARNING 2025-08-11 19:11:25,350 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=17
+WARNING 2025-08-11 19:11:25,351 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=21
+WARNING 2025-08-11 19:11:25,352 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=18
+WARNING 2025-08-11 19:11:25,356 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D17 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,356 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D14 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,356 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=22
+WARNING 2025-08-11 19:11:25,357 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D18 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,358 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D21 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,367 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D22 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,415 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=25
+WARNING 2025-08-11 19:11:25,419 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D25 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,420 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=33
+WARNING 2025-08-11 19:11:25,421 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=26
+WARNING 2025-08-11 19:11:25,424 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=30
+WARNING 2025-08-11 19:11:25,425 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=29
+WARNING 2025-08-11 19:11:25,425 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D33 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,426 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D26 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,429 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=34
+WARNING 2025-08-11 19:11:25,430 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D29 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,430 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D30 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,439 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D34 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,484 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=37
+WARNING 2025-08-11 19:11:25,492 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=38
+WARNING 2025-08-11 19:11:25,493 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=42
+WARNING 2025-08-11 19:11:25,494 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D37 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,497 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D38 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,499 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:11:25,501 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D42 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,503 log 21768 23860 Not Found: /media/https:/picsum.photos/400/400?random=45
+WARNING 2025-08-11 19:11:25,504 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,505 basehttp 21768 23860 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D45 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:11:25,506 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=46
+WARNING 2025-08-11 19:11:25,507 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D46 HTTP/1.1" 404 6745
+INFO 2025-08-11 19:11:26,166 basehttp 21768 20704 "GET /cart/ HTTP/1.1" 200 30586
+WARNING 2025-08-11 19:11:26,214 log 21768 20704 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:11:26,215 basehttp 21768 20704 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6745
+ERROR 2025-08-11 19:11:30,637 log 21768 20704 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:11:30,639 basehttp 21768 20704 "POST /update_item/ HTTP/1.1" 500 84577
+INFO 2025-08-11 19:11:33,649 basehttp 21768 20704 "GET /checkout/ HTTP/1.1" 200 27164
+WARNING 2025-08-11 19:11:33,677 basehttp 21768 20704 "GET /static/images/payment-methods.png HTTP/1.1" 404 1938
+INFO 2025-08-11 19:11:33,682 basehttp 21768 23860 "GET /static/js/checkout.js HTTP/1.1" 200 8396
+ERROR 2025-08-11 19:11:37,305 log 21768 23860 Internal Server Error: /create-transaction/
+ERROR 2025-08-11 19:11:37,306 basehttp 21768 23860 "POST /create-transaction/ HTTP/1.1" 500 162
+INFO 2025-08-11 19:11:49,325 basehttp 21768 17284 "GET /admin/store/orderitem/ HTTP/1.1" 200 28887
+INFO 2025-08-11 19:11:49,365 basehttp 21768 17284 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-11 19:11:53,986 basehttp 21768 17284 "POST /admin/store/orderitem/ HTTP/1.1" 200 24267
+INFO 2025-08-11 19:11:54,010 basehttp 21768 17284 "GET /static/admin/js/cancel.js HTTP/1.1" 200 729
+INFO 2025-08-11 19:11:55,147 basehttp 21768 17284 "POST /admin/store/orderitem/ HTTP/1.1" 302 0
+INFO 2025-08-11 19:11:55,192 basehttp 21768 17284 "GET /admin/store/orderitem/ HTTP/1.1" 200 26559
+INFO 2025-08-11 19:11:55,224 basehttp 21768 17284 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-11 19:11:57,700 basehttp 21768 23860 "GET /checkout/ HTTP/1.1" 200 26176
+WARNING 2025-08-11 19:11:57,728 basehttp 21768 23860 "GET /static/images/payment-methods.png HTTP/1.1" 404 1938
+INFO 2025-08-11 19:12:01,847 basehttp 21768 15628 "GET /cart/ HTTP/1.1" 200 24205
+INFO 2025-08-11 19:12:03,530 basehttp 21768 15628 "GET / HTTP/1.1" 200 96064
+WARNING 2025-08-11 19:12:03,600 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:12:03,602 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=5
+WARNING 2025-08-11 19:12:03,603 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=6
+WARNING 2025-08-11 19:12:03,603 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:12:03,605 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D5 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:12:03,605 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D6 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:12:03,608 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=2
+WARNING 2025-08-11 19:12:03,614 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D2 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:12:03,659 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=9
+WARNING 2025-08-11 19:12:03,660 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=10
+WARNING 2025-08-11 19:12:03,662 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D9 HTTP/1.1" 404 6741
+WARNING 2025-08-11 19:12:03,662 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D10 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,663 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=13
+WARNING 2025-08-11 19:12:03,665 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=14
+WARNING 2025-08-11 19:12:03,668 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D13 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,673 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D14 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,740 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=18
+WARNING 2025-08-11 19:12:03,741 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=17
+WARNING 2025-08-11 19:12:03,742 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=21
+WARNING 2025-08-11 19:12:03,743 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=22
+WARNING 2025-08-11 19:12:03,748 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D18 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,759 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D17 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,767 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D21 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,769 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D22 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,841 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=25
+WARNING 2025-08-11 19:12:03,843 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D25 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,846 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=26
+WARNING 2025-08-11 19:12:03,850 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D26 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,853 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=29
+WARNING 2025-08-11 19:12:03,853 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=30
+WARNING 2025-08-11 19:12:03,855 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D29 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,856 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D30 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,909 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=33
+WARNING 2025-08-11 19:12:03,916 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D33 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,917 log 21768 15628 Not Found: /media/https:/picsum.photos/400/400?random=34
+WARNING 2025-08-11 19:12:03,918 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=37
+WARNING 2025-08-11 19:12:03,922 basehttp 21768 15628 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D34 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,925 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D37 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,927 log 21768 15972 Not Found: /media/https:/picsum.photos/400/400?random=38
+WARNING 2025-08-11 19:12:03,928 log 21768 8656 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:12:03,931 basehttp 21768 8656 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,932 basehttp 21768 15972 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D38 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,932 log 21768 7540 Not Found: /media/https:/picsum.photos/400/400?random=42
+WARNING 2025-08-11 19:12:03,943 basehttp 21768 7540 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D42 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,953 log 21768 22284 Not Found: /media/https:/picsum.photos/400/400?random=45
+WARNING 2025-08-11 19:12:03,954 basehttp 21768 22284 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D45 HTTP/1.1" 404 6745
+WARNING 2025-08-11 19:12:03,955 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=46
+WARNING 2025-08-11 19:12:03,956 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D46 HTTP/1.1" 404 6745
+INFO 2025-08-11 19:12:06,585 basehttp 21768 22284 "POST /update_item/ HTTP/1.1" 200 16
+INFO 2025-08-11 19:12:06,586 basehttp 21768 7540 "POST /update_item/ HTTP/1.1" 200 16
+ERROR 2025-08-11 19:12:06,638 log 21768 5760 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:12:06,642 basehttp 21768 5760 "POST /update_item/ HTTP/1.1" 500 84525
+INFO 2025-08-11 19:12:08,955 basehttp 21768 5760 "GET /cart/ HTTP/1.1" 200 30578
+WARNING 2025-08-11 19:12:08,999 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:12:09,000 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6741
+INFO 2025-08-11 19:12:14,774 basehttp 21768 5760 "GET /cart/ HTTP/1.1" 200 30578
+WARNING 2025-08-11 19:12:14,808 log 21768 5760 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:12:14,809 basehttp 21768 5760 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6741
+ERROR 2025-08-11 19:12:16,168 log 21768 5760 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:12:16,172 basehttp 21768 5760 "POST /update_item/ HTTP/1.1" 500 84565
+INFO 2025-08-11 19:12:16,702 basehttp 21768 5760 "GET /checkout/ HTTP/1.1" 200 27168
+WARNING 2025-08-11 19:12:16,734 basehttp 21768 5760 "GET /static/images/payment-methods.png HTTP/1.1" 404 1938
+ERROR 2025-08-11 19:12:19,676 log 21768 7540 Internal Server Error: /create-transaction/
+ERROR 2025-08-11 19:12:19,677 basehttp 21768 7540 "POST /create-transaction/ HTTP/1.1" 500 169
+INFO 2025-08-11 19:12:33,697 autoreload 21768 8228 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\ecommerce\settings.py changed, reloading.
+INFO 2025-08-11 19:14:23,856 autoreload 5940 19596 Watching for file changes with StatReloader
+INFO 2025-08-11 19:14:27,049 basehttp 5940 5216 "GET / HTTP/1.1" 200 96064
+WARNING 2025-08-11 19:14:27,124 log 5940 5216 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:14:27,127 basehttp 5940 5216 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:14:27,129 log 5940 2360 Not Found: /media/https:/picsum.photos/400/400?random=2
+WARNING 2025-08-11 19:14:27,130 basehttp 5940 2360 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D2 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:14:27,164 log 5940 5216 Not Found: /media/https:/picsum.photos/400/400?random=5
+WARNING 2025-08-11 19:14:27,167 basehttp 5940 5216 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D5 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:14:27,169 log 5940 2360 Not Found: /media/https:/picsum.photos/400/400?random=6
+WARNING 2025-08-11 19:14:27,171 basehttp 5940 2360 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D6 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:14:27,219 log 5940 5216 Not Found: /media/https:/picsum.photos/400/400?random=9
+WARNING 2025-08-11 19:14:27,220 basehttp 5940 5216 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D9 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:14:27,222 log 5940 2360 Not Found: /media/https:/picsum.photos/400/400?random=10
+WARNING 2025-08-11 19:14:27,234 log 5940 13060 Not Found: /media/https:/picsum.photos/400/400?random=13
+WARNING 2025-08-11 19:14:27,234 basehttp 5940 2360 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D10 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,249 basehttp 5940 13060 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D13 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,282 log 5940 5216 Not Found: /media/https:/picsum.photos/400/400?random=14
+WARNING 2025-08-11 19:14:27,284 basehttp 5940 5216 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D14 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,293 log 5940 2360 Not Found: /media/https:/picsum.photos/400/400?random=17
+WARNING 2025-08-11 19:14:27,299 basehttp 5940 2360 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D17 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,303 log 5940 13060 Not Found: /media/https:/picsum.photos/400/400?random=18
+WARNING 2025-08-11 19:14:27,312 basehttp 5940 13060 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D18 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,335 log 5940 5216 Not Found: /media/https:/picsum.photos/400/400?random=21
+WARNING 2025-08-11 19:14:27,337 basehttp 5940 5216 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D21 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,341 log 5940 2360 Not Found: /media/https:/picsum.photos/400/400?random=22
+WARNING 2025-08-11 19:14:27,343 basehttp 5940 2360 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D22 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,346 log 5940 13060 Not Found: /media/https:/picsum.photos/400/400?random=25
+WARNING 2025-08-11 19:14:27,350 basehttp 5940 13060 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D25 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,394 log 5940 5216 Not Found: /media/https:/picsum.photos/400/400?random=26
+WARNING 2025-08-11 19:14:27,400 log 5940 2360 Not Found: /media/https:/picsum.photos/400/400?random=29
+WARNING 2025-08-11 19:14:27,403 basehttp 5940 5216 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D26 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,403 log 5940 13060 Not Found: /media/https:/picsum.photos/400/400?random=30
+WARNING 2025-08-11 19:14:27,419 basehttp 5940 2360 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D29 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,433 basehttp 5940 13060 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D30 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,487 log 5940 5216 Not Found: /media/https:/picsum.photos/400/400?random=38
+WARNING 2025-08-11 19:14:27,497 log 5940 5900 Not Found: /media/https:/picsum.photos/400/400?random=33
+WARNING 2025-08-11 19:14:27,497 log 5940 9288 Not Found: /media/https:/picsum.photos/400/400?random=34
+WARNING 2025-08-11 19:14:27,498 basehttp 5940 5216 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D38 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,498 basehttp 5940 5900 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D33 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,501 basehttp 5940 9288 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D34 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,506 log 5940 13060 Not Found: /media/https:/picsum.photos/400/400?random=42
+WARNING 2025-08-11 19:14:27,509 basehttp 5940 13060 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D42 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,511 log 5940 2360 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:14:27,514 log 5940 23132 Not Found: /media/https:/picsum.photos/400/400?random=37
+WARNING 2025-08-11 19:14:27,516 basehttp 5940 2360 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,519 basehttp 5940 23132 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D37 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,541 log 5940 9288 Not Found: /media/https:/picsum.photos/400/400?random=45
+WARNING 2025-08-11 19:14:27,543 basehttp 5940 9288 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D45 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:14:27,544 log 5940 5900 Not Found: /media/https:/picsum.photos/400/400?random=46
+WARNING 2025-08-11 19:14:27,545 basehttp 5940 5900 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D46 HTTP/1.1" 404 6740
+ERROR 2025-08-11 19:14:29,682 log 5940 9288 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:14:29,703 log 5940 5900 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:14:29,732 basehttp 5940 9288 "POST /update_item/ HTTP/1.1" 500 81060
+ERROR 2025-08-11 19:14:29,746 basehttp 5940 5900 "POST /update_item/ HTTP/1.1" 500 81060
+ERROR 2025-08-11 19:14:29,763 log 5940 23132 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:14:29,769 basehttp 5940 23132 "POST /update_item/ HTTP/1.1" 500 81089
+ERROR 2025-08-11 19:14:32,470 log 5940 23132 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:14:32,515 log 5940 5900 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:14:32,534 basehttp 5940 23132 "POST /update_item/ HTTP/1.1" 500 81060
+ERROR 2025-08-11 19:14:32,551 basehttp 5940 5900 "POST /update_item/ HTTP/1.1" 500 81060
+ERROR 2025-08-11 19:14:32,570 log 5940 9288 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:14:32,577 basehttp 5940 9288 "POST /update_item/ HTTP/1.1" 500 81089
+INFO 2025-08-11 19:14:57,340 basehttp 5940 9288 "POST /update_item/ HTTP/1.1" 200 16
+INFO 2025-08-11 19:14:57,341 basehttp 5940 5900 "POST /update_item/ HTTP/1.1" 200 16
+ERROR 2025-08-11 19:14:57,406 log 5940 23132 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 182, in updateItem
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 948, in get_or_create
+    return self.get(**kwargs), False
+           ~~~~~~~~^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\query.py", line 652, in get
+    raise self.model.MultipleObjectsReturned(
+    ...<5 lines>...
+    )
+store.models.OrderItem.MultipleObjectsReturned: get() returned more than one OrderItem -- it returned 2!
+ERROR 2025-08-11 19:14:57,411 basehttp 5940 23132 "POST /update_item/ HTTP/1.1" 500 81237
+ERROR 2025-08-11 19:15:05,595 log 5940 10588 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:05,626 log 5940 21052 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:05,630 basehttp 5940 10588 "POST /update_item/ HTTP/1.1" 500 70791
+ERROR 2025-08-11 19:15:05,636 basehttp 5940 21052 "POST /update_item/ HTTP/1.1" 500 70791
+INFO 2025-08-11 19:15:06,074 basehttp 5940 21052 "GET /cart/ HTTP/1.1" 200 22425
+INFO 2025-08-11 19:15:07,772 basehttp 5940 21052 "GET / HTTP/1.1" 200 94284
+WARNING 2025-08-11 19:15:07,821 log 5940 21052 Not Found: /media/https:/picsum.photos/400/400?random=1
+WARNING 2025-08-11 19:15:07,825 log 5940 10588 Not Found: /media/https:/picsum.photos/400/400?random=2
+WARNING 2025-08-11 19:15:07,828 log 5940 22620 Not Found: /media/https:/picsum.photos/400/400?random=5
+WARNING 2025-08-11 19:15:07,829 basehttp 5940 21052 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D1 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:15:07,829 basehttp 5940 10588 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D2 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:15:07,831 basehttp 5940 22620 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D5 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:15:07,854 log 5940 22620 Not Found: /media/https:/picsum.photos/400/400?random=10
+WARNING 2025-08-11 19:15:07,860 log 5940 21052 Not Found: /media/https:/picsum.photos/400/400?random=6
+WARNING 2025-08-11 19:15:07,863 log 5940 10588 Not Found: /media/https:/picsum.photos/400/400?random=9
+WARNING 2025-08-11 19:15:07,864 basehttp 5940 22620 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D10 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,867 basehttp 5940 10588 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D9 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:15:07,870 basehttp 5940 21052 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D6 HTTP/1.1" 404 6736
+WARNING 2025-08-11 19:15:07,900 log 5940 10588 Not Found: /media/https:/picsum.photos/400/400?random=14
+WARNING 2025-08-11 19:15:07,906 log 5940 22620 Not Found: /media/https:/picsum.photos/400/400?random=13
+WARNING 2025-08-11 19:15:07,910 log 5940 21052 Not Found: /media/https:/picsum.photos/400/400?random=17
+WARNING 2025-08-11 19:15:07,911 basehttp 5940 10588 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D14 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,911 basehttp 5940 22620 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D13 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,912 basehttp 5940 21052 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D17 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,935 log 5940 22620 Not Found: /media/https:/picsum.photos/400/400?random=18
+WARNING 2025-08-11 19:15:07,938 log 5940 10588 Not Found: /media/https:/picsum.photos/400/400?random=21
+WARNING 2025-08-11 19:15:07,942 log 5940 21052 Not Found: /media/https:/picsum.photos/400/400?random=22
+WARNING 2025-08-11 19:15:07,943 basehttp 5940 22620 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D18 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,943 basehttp 5940 10588 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D21 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,944 basehttp 5940 21052 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D22 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,972 log 5940 22620 Not Found: /media/https:/picsum.photos/400/400?random=25
+WARNING 2025-08-11 19:15:07,975 log 5940 10588 Not Found: /media/https:/picsum.photos/400/400?random=26
+WARNING 2025-08-11 19:15:07,979 log 5940 21052 Not Found: /media/https:/picsum.photos/400/400?random=29
+WARNING 2025-08-11 19:15:07,979 basehttp 5940 22620 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D25 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,979 basehttp 5940 10588 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D26 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:07,983 basehttp 5940 21052 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D29 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,002 log 5940 22620 Not Found: /media/https:/picsum.photos/400/400?random=30
+WARNING 2025-08-11 19:15:08,007 log 5940 10588 Not Found: /media/https:/picsum.photos/400/400?random=33
+WARNING 2025-08-11 19:15:08,011 log 5940 21052 Not Found: /media/https:/picsum.photos/400/400?random=34
+WARNING 2025-08-11 19:15:08,011 basehttp 5940 22620 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D30 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,012 basehttp 5940 10588 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D33 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,012 basehttp 5940 21052 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D34 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,042 log 5940 22620 Not Found: /media/https:/picsum.photos/400/400?random=38
+WARNING 2025-08-11 19:15:08,046 log 5940 10588 Not Found: /media/https:/picsum.photos/400/400?random=37
+WARNING 2025-08-11 19:15:08,052 log 5940 21052 Not Found: /media/https:/picsum.photos/400/400?random=41
+WARNING 2025-08-11 19:15:08,053 basehttp 5940 22620 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D38 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,054 basehttp 5940 10588 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D37 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,055 basehttp 5940 21052 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D41 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,088 log 5940 22620 Not Found: /media/https:/picsum.photos/400/400?random=42
+WARNING 2025-08-11 19:15:08,094 log 5940 10588 Not Found: /media/https:/picsum.photos/400/400?random=45
+WARNING 2025-08-11 19:15:08,095 basehttp 5940 22620 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D42 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,098 log 5940 21052 Not Found: /media/https:/picsum.photos/400/400?random=46
+WARNING 2025-08-11 19:15:08,101 basehttp 5940 10588 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D45 HTTP/1.1" 404 6740
+WARNING 2025-08-11 19:15:08,102 basehttp 5940 21052 "GET /media/https%3A/picsum.photos/400/400%3Frandom%3D46 HTTP/1.1" 404 6740
+ERROR 2025-08-11 19:15:11,347 log 5940 10588 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:11,373 log 5940 21052 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:11,377 basehttp 5940 10588 "POST /update_item/ HTTP/1.1" 500 70981
+ERROR 2025-08-11 19:15:11,380 basehttp 5940 21052 "POST /update_item/ HTTP/1.1" 500 70981
+ERROR 2025-08-11 19:15:15,150 log 5940 21052 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:15,155 log 5940 10588 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:15,160 basehttp 5940 21052 "POST /update_item/ HTTP/1.1" 500 70981
+ERROR 2025-08-11 19:15:15,163 basehttp 5940 10588 "POST /update_item/ HTTP/1.1" 500 70981
+ERROR 2025-08-11 19:15:16,055 log 5940 21052 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:16,058 log 5940 10588 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:16,062 basehttp 5940 21052 "POST /update_item/ HTTP/1.1" 500 70981
+ERROR 2025-08-11 19:15:16,064 basehttp 5940 10588 "POST /update_item/ HTTP/1.1" 500 70981
+ERROR 2025-08-11 19:15:16,433 log 5940 10588 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:16,460 log 5940 21052 Internal Server Error: /update_item/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 178, in updateItem
+    customer = request.user.customer
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+AttributeError: 'AnonymousUser' object has no attribute 'customer'
+ERROR 2025-08-11 19:15:16,464 basehttp 5940 10588 "POST /update_item/ HTTP/1.1" 500 70981
+ERROR 2025-08-11 19:15:16,468 basehttp 5940 21052 "POST /update_item/ HTTP/1.1" 500 70981
+INFO 2025-08-11 20:03:20,459 basehttp 5940 9344 "GET /admin/store/product/ HTTP/1.1" 200 62938
+INFO 2025-08-11 20:03:20,793 basehttp 5940 9344 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:03:27,282 basehttp 5940 9344 "POST /admin/store/product/ HTTP/1.1" 200 31540
+INFO 2025-08-11 20:03:29,788 basehttp 5940 9344 "POST /admin/store/product/ HTTP/1.1" 302 0
+INFO 2025-08-11 20:03:29,823 basehttp 5940 9344 "GET /admin/store/product/ HTTP/1.1" 200 27500
+INFO 2025-08-11 20:03:29,855 basehttp 5940 9344 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:03:57,767 basehttp 5940 9344 "GET /admin/store/product/ HTTP/1.1" 200 62923
+INFO 2025-08-11 20:03:57,794 basehttp 5940 9344 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:04:03,655 basehttp 5940 19844 "GET / HTTP/1.1" 200 91665
+INFO 2025-08-11 20:04:03,721 basehttp 5940 12132 "GET /static/css/store.css HTTP/1.1" 304 0
+INFO 2025-08-11 20:04:03,721 basehttp 5940 19844 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2025-08-11 20:04:03,727 basehttp 5940 12132 "GET /static/js/store.js HTTP/1.1" 304 0
+INFO 2025-08-11 20:04:03,728 basehttp 5940 19844 "GET /static/js/main.js HTTP/1.1" 304 0
+INFO 2025-08-11 20:04:06,750 basehttp 5940 12132 "POST /update_item/ HTTP/1.1" 200 16
+INFO 2025-08-11 20:04:06,751 basehttp 5940 19844 "POST /update_item/ HTTP/1.1" 200 16
+INFO 2025-08-11 20:04:06,754 basehttp 5940 18372 "POST /update_item/ HTTP/1.1" 200 16
+ERROR 2025-08-11 20:04:08,843 log 5940 18372 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'OrderItem' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 141, in cart
+    return render(request, 'store/cart.html', context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\models.py", line 358, in get_total
+    total = self.product.get_discount_price * self.quantity
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get_discount_price'
+ERROR 2025-08-11 20:04:08,866 basehttp 5940 18372 "GET /cart/ HTTP/1.1" 500 196596
+INFO 2025-08-11 20:04:44,322 autoreload 5940 19596 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py changed, reloading.
+INFO 2025-08-11 20:04:45,525 autoreload 23232 21812 Watching for file changes with StatReloader
+ERROR 2025-08-11 20:04:49,587 log 23232 1244 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'OrderItem' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 141, in cart
+    return render(request, 'store/cart.html', context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\models.py", line 358, in get_total
+    total = self.product.get_discount_price * self.quantity
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get_discount_price'
+ERROR 2025-08-11 20:04:49,595 basehttp 23232 1244 "GET /cart/ HTTP/1.1" 500 196733
+ERROR 2025-08-11 20:04:54,910 log 23232 1920 Internal Server Error: /admin/store/orderitem/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: OrderItem has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ~~~~^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+    ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\options.py", line 999, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ~~~^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\models.py", line 363, in __str__
+    return f"{self.product.name}{variant_info} x {self.quantity}"
+              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+ERROR 2025-08-11 20:04:54,935 basehttp 23232 1920 "GET /admin/store/orderitem/ HTTP/1.1" 500 460333
+INFO 2025-08-11 20:05:10,264 basehttp 23232 1920 "GET /admin/store/product/ HTTP/1.1" 200 62923
+INFO 2025-08-11 20:05:11,038 basehttp 23232 1920 "GET /admin/store/product/ HTTP/1.1" 200 62923
+INFO 2025-08-11 20:05:11,069 basehttp 23232 1920 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:05:13,153 basehttp 23232 1920 "GET /admin/store/customer/ HTTP/1.1" 200 26303
+INFO 2025-08-11 20:05:13,186 basehttp 23232 1920 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:05:16,297 basehttp 23232 1920 "GET /admin/store/category/ HTTP/1.1" 200 25447
+INFO 2025-08-11 20:05:16,340 basehttp 23232 1920 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+ERROR 2025-08-11 20:05:17,897 log 23232 1920 Internal Server Error: /admin/store/orderitem/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\db\models\options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+        "%s has no field named '%s'" % (self.object_name, field_name)
+    )
+django.core.exceptions.FieldDoesNotExist: OrderItem has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\base.py", line 45, in render
+    return super().render(context)
+           ~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 345, in result_list
+    "results": list(results(cl)),
+               ~~~~^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 321, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 312, in __init__
+    super().__init__(*items)
+    ~~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\templatetags\admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\utils.py", line 298, in lookup_field
+    value = attr(obj)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\contrib\admin\options.py", line 999, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\html.py", line 117, in conditional_escape
+    return escape(text)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\utils\html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ~~~^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\models.py", line 363, in __str__
+    return f"{self.product.name}{variant_info} x {self.quantity}"
+              ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'name'
+ERROR 2025-08-11 20:05:17,908 basehttp 23232 1920 "GET /admin/store/orderitem/ HTTP/1.1" 500 460334
+INFO 2025-08-11 20:05:20,014 basehttp 23232 1920 "GET /admin/store/category/ HTTP/1.1" 200 25447
+INFO 2025-08-11 20:05:21,409 basehttp 23232 1920 "GET /admin/store/category/add/ HTTP/1.1" 200 30017
+INFO 2025-08-11 20:05:21,473 basehttp 23232 22132 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:05:21,580 basehttp 23232 1920 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2025-08-11 20:05:35,974 basehttp 23232 1920 "GET /admin/store/category/add/?_to_field=id&_popup=1&_modal=163925 HTTP/1.1" 200 22523
+INFO 2025-08-11 20:05:35,998 basehttp 23232 1920 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:05:38,765 basehttp 23232 1920 "POST /admin/store/category/add/?_to_field=id&_popup=1&_modal=163925 HTTP/1.1" 200 22788
+INFO 2025-08-11 20:05:38,795 basehttp 23232 1920 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:05:41,337 basehttp 23232 1920 "GET /admin/store/category/add/?_to_field=id&_popup=1&_modal=1695 HTTP/1.1" 200 22523
+INFO 2025-08-11 20:05:41,359 basehttp 23232 1920 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:05:44,559 basehttp 23232 1920 "POST /admin/store/category/add/ HTTP/1.1" 302 0
+INFO 2025-08-11 20:05:44,592 basehttp 23232 1920 "GET /admin/store/category/ HTTP/1.1" 200 28258
+INFO 2025-08-11 20:05:44,630 basehttp 23232 1920 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+ERROR 2025-08-11 20:05:51,114 log 23232 1244 Internal Server Error: /cart/
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 875, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'OrderItem' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 141, in cart
+    return render(request, 'store/cart.html', context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\defaulttags.py", line 326, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\defaulttags.py", line 242, in render
+    nodelist.append(node.render_annotated(context))
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1059, in render
+    output = self.filter_expression.resolve(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 710, in resolve
+    obj = self.var.resolve(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 842, in resolve
+    value = self._resolve_lookup(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 885, in _resolve_lookup
+    current = getattr(current, bit)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\models.py", line 358, in get_total
+    total = self.product.get_discount_price * self.quantity
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'get_discount_price'
+ERROR 2025-08-11 20:05:51,121 basehttp 23232 1244 "GET /cart/ HTTP/1.1" 500 196733
+INFO 2025-08-11 20:13:47,996 autoreload 23232 21812 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\models.py changed, reloading.
+INFO 2025-08-11 20:13:49,235 autoreload 6380 8656 Watching for file changes with StatReloader
+INFO 2025-08-11 20:15:08,994 basehttp 6380 15720 "GET /cart/ HTTP/1.1" 200 27157
+INFO 2025-08-11 20:15:12,230 basehttp 6380 15720 "GET /checkout/ HTTP/1.1" 200 26683
+WARNING 2025-08-11 20:15:12,292 basehttp 6380 15720 "GET /static/images/payment-methods.png HTTP/1.1" 404 1938
+ERROR 2025-08-11 20:15:18,391 log 6380 3476 Internal Server Error: /create-transaction/
+ERROR 2025-08-11 20:15:18,392 basehttp 6380 3476 "POST /create-transaction/ HTTP/1.1" 500 169
+INFO 2025-08-11 20:16:02,807 autoreload 6380 8656 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\ecommerce\settings.py changed, reloading.
+INFO 2025-08-11 20:16:04,094 autoreload 20440 23492 Watching for file changes with StatReloader
+ERROR 2025-08-11 20:16:06,668 log 20440 18092 Internal Server Error: /create-transaction/
+ERROR 2025-08-11 20:16:06,669 basehttp 20440 18092 "POST /create-transaction/ HTTP/1.1" 500 281
+ERROR 2025-08-11 20:16:08,024 log 20440 18092 Internal Server Error: /create-transaction/
+ERROR 2025-08-11 20:16:08,025 basehttp 20440 18092 "POST /create-transaction/ HTTP/1.1" 500 281
+INFO 2025-08-11 20:16:12,981 basehttp 20440 18092 "GET /checkout/ HTTP/1.1" 200 26683
+WARNING 2025-08-11 20:16:13,016 basehttp 20440 18092 "GET /static/images/payment-methods.png HTTP/1.1" 404 1938
+ERROR 2025-08-11 20:16:17,801 log 20440 21860 Internal Server Error: /create-transaction/
+ERROR 2025-08-11 20:16:17,802 basehttp 20440 21860 "POST /create-transaction/ HTTP/1.1" 500 281
+INFO 2025-08-11 20:16:32,496 autoreload 20440 23492 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\ecommerce\settings.py changed, reloading.
+INFO 2025-08-11 20:16:33,617 autoreload 18876 9952 Watching for file changes with StatReloader
+INFO 2025-08-11 20:16:38,058 basehttp 18876 8668 "GET /checkout/ HTTP/1.1" 200 26683
+WARNING 2025-08-11 20:16:38,093 basehttp 18876 8668 "GET /static/images/payment-methods.png HTTP/1.1" 404 1938
+ERROR 2025-08-11 20:16:43,344 log 18876 17976 Internal Server Error: /create-transaction/
+ERROR 2025-08-11 20:16:43,344 basehttp 18876 17976 "POST /create-transaction/ HTTP/1.1" 500 169
+INFO 2025-08-11 20:21:41,049 autoreload 18876 9952 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py changed, reloading.
+INFO 2025-08-11 20:21:42,661 autoreload 16164 5260 Watching for file changes with StatReloader
+INFO 2025-08-11 20:21:47,428 basehttp 16164 3040 "GET / HTTP/1.1" 200 91665
+INFO 2025-08-11 20:21:47,487 basehttp 16164 3040 "GET /static/css/store.css HTTP/1.1" 304 0
+INFO 2025-08-11 20:21:47,488 basehttp 16164 10132 "GET /static/js/store.js HTTP/1.1" 304 0
+INFO 2025-08-11 20:21:51,393 basehttp 16164 9728 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 20:21:51,396 basehttp 16164 3040 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 20:21:51,399 basehttp 16164 10132 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 20:21:53,781 basehttp 16164 10132 "GET /cart/ HTTP/1.1" 200 27157
+INFO 2025-08-11 20:21:55,470 basehttp 16164 10132 "GET /checkout/ HTTP/1.1" 200 26683
+WARNING 2025-08-11 20:21:55,518 basehttp 16164 10132 "GET /static/images/payment-methods.png HTTP/1.1" 404 1938
+INFO 2025-08-11 20:21:59,572 basehttp 16164 3040 "POST /create-transaction/ HTTP/1.1" 200 191
+INFO 2025-08-11 20:23:43,573 basehttp 16164 15848 "GET /admin/store/product/ HTTP/1.1" 200 62923
+INFO 2025-08-11 20:23:43,655 basehttp 16164 15848 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:23:49,457 basehttp 16164 15848 "POST /admin/store/product/ HTTP/1.1" 200 31559
+INFO 2025-08-11 20:23:52,199 basehttp 16164 15848 "POST /admin/store/product/ HTTP/1.1" 302 0
+INFO 2025-08-11 20:23:52,240 basehttp 16164 15848 "GET /admin/store/product/ HTTP/1.1" 200 27500
+INFO 2025-08-11 20:23:52,273 basehttp 16164 15848 "GET /admin/jsi18n/ HTTP/1.1" 200 7814
+INFO 2025-08-11 20:24:12,369 basehttp 16164 3040 "GET / HTTP/1.1" 200 91639
+INFO 2025-08-11 20:24:12,396 basehttp 16164 3040 "GET /static/js/main.js HTTP/1.1" 304 0
+INFO 2025-08-11 20:24:15,295 basehttp 16164 3040 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 20:24:15,299 basehttp 16164 9728 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 20:24:15,355 basehttp 16164 3040 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 20:24:16,632 basehttp 16164 3040 "GET /cart/ HTTP/1.1" 200 30452
+INFO 2025-08-11 20:24:19,455 basehttp 16164 3040 "POST /update_item/ HTTP/1.1" 200 96
+INFO 2025-08-11 20:24:23,039 basehttp 16164 3040 "GET /checkout/ HTTP/1.1" 200 27143
+WARNING 2025-08-11 20:24:23,070 basehttp 16164 3040 "GET /static/images/payment-methods.png HTTP/1.1" 404 1938
+INFO 2025-08-11 20:24:26,847 basehttp 16164 9728 "POST /create-transaction/ HTTP/1.1" 200 191
+INFO 2025-08-11 20:27:03,125 basehttp 16164 9728 "GET /cart/ HTTP/1.1" 200 30452
+INFO 2025-08-11 20:27:03,146 basehttp 16164 9728 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2025-08-11 20:27:05,005 basehttp 16164 9728 "GET /checkout/ HTTP/1.1" 200 28240
+INFO 2025-08-11 20:30:16,273 basehttp 16164 9728 "GET / HTTP/1.1" 200 91639
+INFO 2025-08-11 20:30:44,512 basehttp 16164 9728 "GET /cart/ HTTP/1.1" 200 30452
+INFO 2025-08-11 20:44:53,511 autoreload 16676 2264 Watching for file changes with StatReloader
+INFO 2025-08-11 20:45:06,863 basehttp 16676 15668 "GET / HTTP/1.1" 200 102418
+INFO 2025-08-11 20:45:06,987 basehttp 16676 15668 "GET /static/css/store.css HTTP/1.1" 304 0
+INFO 2025-08-11 20:45:07,024 basehttp 16676 15668 "GET /static/js/main.js HTTP/1.1" 304 0
+INFO 2025-08-11 20:45:07,025 basehttp 16676 19352 "GET /static/js/store.js HTTP/1.1" 304 0
+INFO 2025-08-11 20:45:11,290 basehttp 16676 19352 "GET / HTTP/1.1" 200 102418
+INFO 2025-08-11 20:45:11,465 basehttp 16676 19352 "GET / HTTP/1.1" 200 102418
+INFO 2025-08-11 20:56:58,191 basehttp 16676 13080 "GET / HTTP/1.1" 200 107144
+INFO 2025-08-11 20:56:58,230 basehttp 16676 13080 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2025-08-11 20:56:58,233 basehttp 16676 19528 "GET /static/css/store.css HTTP/1.1" 304 0
+INFO 2025-08-11 20:56:59,412 basehttp 16676 19528 "GET / HTTP/1.1" 200 107144
+INFO 2025-08-11 20:57:03,237 basehttp 16676 19528 "GET /cart/ HTTP/1.1" 200 35183
+INFO 2025-08-11 20:57:09,752 basehttp 16676 19528 "GET / HTTP/1.1" 200 107144
+INFO 2025-08-11 21:00:11,552 autoreload 16676 2264 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\ecommerce\settings.py changed, reloading.
+INFO 2025-08-11 21:00:12,951 autoreload 20620 1156 Watching for file changes with StatReloader
+INFO 2025-08-11 21:01:34,635 autoreload 20620 1156 E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\ecommerce\settings.py changed, reloading.
+INFO 2025-08-11 21:10:33,753 autoreload 16528 12476 Watching for file changes with StatReloader
+INFO 2025-08-11 21:10:40,267 basehttp 16528 10284 "GET / HTTP/1.1" 200 12640
+INFO 2025-08-11 21:13:34,530 basehttp 16528 10284 "GET / HTTP/1.1" 200 103262
+INFO 2025-08-11 21:13:34,566 basehttp 16528 10284 "GET /static/css/store.css HTTP/1.1" 304 0
+INFO 2025-08-11 21:13:34,568 basehttp 16528 10284 "GET /static/js/store.js HTTP/1.1" 304 0
+INFO 2025-08-11 21:13:42,189 basehttp 16528 10284 "GET /cart/ HTTP/1.1" 200 31283
+ERROR 2025-08-11 21:17:03,814 log 16528 10284 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: store/main.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 60, in store
+    return render(request, 'store/store.html', context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: store/main.html
+ERROR 2025-08-11 21:17:03,838 basehttp 16528 10284 "GET / HTTP/1.1" 500 154962
+ERROR 2025-08-11 21:17:06,592 log 16528 10284 Internal Server Error: /
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        template_name,
+        ^^^^^^^^^^^^^^
+        skip=history,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: store/main.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\store\views.py", line 60, in store
+    return render(request, 'store/store.html', context)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 63, in render
+    reraise(exc, self.backend)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "E:\CODING PROGRAMING\BACKEND\E COMMERCE BACKEND\env\Lib\site-packages\django\template\backends\django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: store/main.html
+ERROR 2025-08-11 21:17:06,599 basehttp 16528 10284 "GET / HTTP/1.1" 500 155099
+INFO 2025-08-11 21:18:57,301 basehttp 16528 10284 "GET / HTTP/1.1" 200 103262
+INFO 2025-08-11 21:19:02,301 basehttp 16528 10284 "GET / HTTP/1.1" 200 103262
+INFO 2025-08-11 21:19:08,855 basehttp 16528 10284 "GET /cart/ HTTP/1.1" 200 31283
+INFO 2025-08-11 21:19:11,668 basehttp 16528 10284 "GET / HTTP/1.1" 200 103262
+INFO 2025-08-11 21:19:21,548 basehttp 16528 10284 "GET / HTTP/1.1" 200 102418
+INFO 2025-08-11 21:19:21,586 basehttp 16528 10284 "GET /static/js/main.js HTTP/1.1" 304 0

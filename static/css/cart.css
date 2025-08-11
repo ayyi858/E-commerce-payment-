@@ -1,0 +1,143 @@
+/* cart.css */
+
+.cart-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cart-summary {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.cart-summary h5 {
+    margin-bottom: 0;
+}
+
+.cart-items {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header {
+    background-color: #f1f3f5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.cart-item {
+    padding: 20px;
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item:hover {
+    background-color: #f8f9fa;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item img {
+    max-width: 80px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+.item-name {
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.item-price, .item-total {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-btn {
+    background-color: #e9ecef;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #ced4da;
+}
+
+.quantity-value {
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.remove-item {
+    color: #dc3545;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.remove-item:hover {
+    color: #a71d2a;
+}
+
+.btn-continue-shopping, .btn-checkout {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+
+.btn-continue-shopping {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.btn-continue-shopping:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.btn-checkout {
+    background-color: #28a745;
+    border: none;
+}
+
+.btn-checkout:hover {
+    background-color: #218838;
+}
+
+@media (max-width: 768px) {
+    .cart-header, .cart-item {
+        font-size: 14px;
+    }
+
+    .item-name {
+        font-size: 16px;
+    }
+
+    .btn-continue-shopping, .btn-checkout {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
